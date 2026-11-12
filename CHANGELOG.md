@@ -1,5 +1,14 @@
 # Sürüm notları
 
+## 0.2.4
+
+- **Yeni sekmede kendi kartların:** “+ Kart ekle” ile
+  - **Piyasa** — Dolar, Euro, Sterlin, Gram altın, Ons altın, Bitcoin, Ethereum, BIST 100, S&P 500, Nasdaq ya da kendi Yahoo sembolün; fiyat, günlük değişim ve küçük gün içi grafik (Yahoo Finance, dakikada bir yenilenir).
+  - **Siteler** — “İş”, “Sunucular” gibi adlandırdığın hızlı erişim listeleri.
+  - **Hava durumu** — Vakit’te seçili şehir için sıcaklık, durum, en yüksek / en düşük (Open-Meteo).
+  - Kartlar sürükleyerek sıralanır, ⋯ menüsünden düzenlenir ya da kaldırılır. Veriler yalnızca eklediğin kartlar için istenir; kartlar diskte şifreli saklanır.
+- Yeni sekmedeki arama kutusu kaldırıldı: arama ve adresler üstteki adres çubuğundan.
+
 ## 0.2.3
 
 - **İndirilenler kartı:** araç çubuğundaki indirme düğmesi Chrome’daki gibi son indirmeleri gösteren bir kart açar: ilerleme ve kalan süre, duraklat / devam et / iptal, tamamlananı aç ya da Finder’da göster, altta “Tüm indirilenler”. Yeni indirme başladığında kart birkaç saniyeliğine kendiliğinden açılır.
