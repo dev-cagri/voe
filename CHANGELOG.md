@@ -1,5 +1,9 @@
 # Sürüm notları
 
+## 0.2.2
+
+- Adres çubuğunda sade bir gösterge: kilidin köşesindeki küçük nokta, o sitede **site adının da gizli** olduğunu (ECH) gösterir. Kilide tıklayınca tek satırla açıklanır; üzerine gelince ayrıntı görünür.
+
 ## 0.2.1
 
 - voe artık Apple’ın Developer ID imzasıyla imzalanıyor ve Apple tarafından **notarize ediliyor**: “Mac’inizi korumak için engellendi” uyarısı ve “Yine de Aç” adımı yok.
