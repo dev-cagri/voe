@@ -1,5 +1,10 @@
 # Sürüm notları
 
+## 0.2.3
+
+- **İndirilenler kartı:** araç çubuğundaki indirme düğmesi Chrome’daki gibi son indirmeleri gösteren bir kart açar: ilerleme ve kalan süre, duraklat / devam et / iptal, tamamlananı aç ya da Finder’da göster, altta “Tüm indirilenler”. Yeni indirme başladığında kart birkaç saniyeliğine kendiliğinden açılır.
+- **Geçersiz sertifikalı sitelere bilerek girme:** hata sayfasında “Gelişmiş” → sertifika ayrıntıları ve “Yine de … sitesine git (güvenli değil)”. İzin yalnızca o site ve o sertifika için, voe kapanana kadar geçerlidir; adres çubuğu “Güvenli değil” gösterir. Kendinden imzalı sertifika kullanan yönetim panelleri ve yerel sunucular için.
+
 ## 0.2.2
 
 - Adres çubuğunda sade bir gösterge: kilidin köşesindeki küçük nokta, o sitede **site adının da gizli** olduğunu (ECH) gösterir. Kilide tıklayınca tek satırla açıklanır; üzerine gelince ayrıntı görünür.
