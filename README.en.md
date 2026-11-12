@@ -121,10 +121,7 @@ The iOS app is in **TestFlight** beta, and Android is on the way. It shares the 
 ## Installation
 
 1. Download **[voe-mac-arm64.dmg](https://github.com/dev-cagri/voe/releases/latest/download/voe-mac-arm64.dmg)**, open it and drag **voe** into **Applications**.
-2. voe is not notarized by Apple yet. If macOS warns you on first launch, open **System Settings → Privacy & Security** and click **“Open Anyway”**. You can also run this in Terminal:
-   ```bash
-   xattr -dr com.apple.quarantine /Applications/voe.app
-   ```
+2. voe is signed with an Apple Developer ID and **notarized by Apple**; on first launch macOS only asks whether to open an app downloaded from the internet.
 3. You can make voe your default browser in **Ayarlar → Varsayılan tarayıcı** (Settings → Default browser). Chrome bookmarks import in one click; passwords import from a CSV file.
 
 **Requirements:** macOS 12 Monterey or later on Apple Silicon (M1 or newer).

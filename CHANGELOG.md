@@ -1,5 +1,10 @@
 # Sürüm notları
 
+## 0.2.1
+
+- voe artık Apple’ın Developer ID imzasıyla imzalanıyor ve Apple tarafından **notarize ediliyor**: “Mac’inizi korumak için engellendi” uyarısı ve “Yine de Aç” adımı yok.
+- Kamera, mikrofon ve konum izinleri macOS’un korumalı çalışma ortamına (hardened runtime) uygun hâle getirildi.
+
 ## 0.2.0 — gizlilik ve senkron
 
 **Gizlilik: internet sağlayıcın neye baktığını görmez**

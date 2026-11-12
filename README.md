@@ -121,10 +121,7 @@ iOS sürümü **TestFlight** beta aşamasında, Android sürümü hazırlanıyor
 ## Kurulum
 
 1. **[voe-mac-arm64.dmg](https://github.com/dev-cagri/voe/releases/latest/download/voe-mac-arm64.dmg)** dosyasını indir, aç ve **voe**’yu **Uygulamalar** klasörüne sürükle.
-2. voe henüz Apple tarafından onaylanmış (notarize edilmiş) değil. İlk açılışta macOS uyarı verirse **Sistem Ayarları → Gizlilik ve Güvenlik** bölümünde **“Yine de Aç”** düğmesine bas. Ya da Terminal’de şunu çalıştır:
-   ```bash
-   xattr -dr com.apple.quarantine /Applications/voe.app
-   ```
+2. voe, Apple’ın Developer ID imzasıyla imzalanmış ve Apple tarafından **notarize edilmiştir**; ilk açılışta yalnızca “internetten indirildi, açılsın mı?” sorusu çıkar.
 3. İstersen **Ayarlar → Varsayılan tarayıcı** bölümünden voe’yu varsayılan tarayıcın yap. Chrome’daki yer imlerini tek tıkla, şifreleri CSV dosyasıyla içe aktarabilirsin.
 
 **Gereksinimler:** macOS 12 Monterey ya da üzeri, Apple Silicon (M1 ve sonrası).
