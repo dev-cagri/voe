@@ -1,0 +1,49 @@
+voe — Lisans / License
+Copyright (c) 2026 voe. Tüm hakları saklıdır. All rights reserved.
+
+TÜRKÇE
+
+voe ("Yazılım") ücretsiz olarak sunulur. Yazılımı kişisel ve ticari amaçlarla
+indirip kurabilir ve kullanabilirsiniz.
+
+Aşağıdakiler yazılı izin olmadan yapılamaz:
+  - Yazılımı ya da parçalarını değiştirerek veya değiştirmeden yeniden dağıtmak,
+    satmak, kiralamak ya da başka bir ürünün parçası olarak sunmak;
+  - Tersine mühendislik, kaynak koda dönüştürme veya ayrıştırma (yürürlükteki
+    yasaların açıkça izin verdiği durumlar hariç);
+  - voe adını, logosunu ve görsel kimliğini başka ürünlerde kullanmak.
+
+Bu depo yalnızca sürüm dosyalarını, sürüm notlarını ve geri bildirimleri içerir;
+yazılımın kaynak kodu bu lisansla paylaşılmaz.
+
+Yazılım "OLDUĞU GİBİ", açık ya da örtük hiçbir garanti olmaksızın sunulur.
+Yazılımın kullanımından doğan hiçbir zarardan geliştirici sorumlu tutulamaz.
+
+Yazılım, kendi lisanslarıyla dağıtılan açık kaynak bileşenler içerir (Electron ve
+Chromium, Ghostery adblocker, Mozilla Readability, electron-chrome-extensions,
+adhan-js, qrcode-generator, Sora yazı tipi). Bu bileşenlerin lisansları, kendi
+koşullarıyla geçerliliğini korur.
+
+ENGLISH
+
+voe (the "Software") is provided free of charge. You may download, install and
+use the Software for personal and commercial purposes.
+
+Without prior written permission you may not:
+  - redistribute, sell, rent or bundle the Software or any part of it, modified
+    or unmodified;
+  - reverse engineer, decompile or disassemble the Software, except where
+    applicable law expressly permits it;
+  - use the voe name, logo or visual identity for other products.
+
+This repository contains release files, release notes and feedback only; the
+Software's source code is not licensed or shared here.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+
+The Software includes open-source components distributed under their own
+licenses (Electron and Chromium, Ghostery adblocker, Mozilla Readability,
+electron-chrome-extensions, adhan-js, qrcode-generator, the Sora typeface).
+Those licenses continue to apply to those components.

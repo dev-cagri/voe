@@ -1,0 +1,43 @@
+name: Hata bildir / Bug report
+description: Bir şey beklendiği gibi çalışmıyor. Something doesn’t work as expected.
+labels: ["hata"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bildirdiğin için teşekkürler. Lütfen kişisel bilgi (şifre, e-posta, özel adres) paylaşma.
+        Thanks for reporting. Please don’t share personal data (passwords, emails, private URLs).
+  - type: input
+    id: version
+    attributes:
+      label: voe sürümü / voe version
+      description: "⋮ → voe Hakkında"
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS sürümü / macOS version
+      placeholder: "macOS 15.5"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Ne oldu? / What happened?
+      description: Ne bekliyordun, ne oldu? What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Nasıl tekrarlanır? / Steps to reproduce
+      placeholder: |
+        1. …
+        2. …
+        3. …
+  - type: textarea
+    id: extra
+    attributes:
+      label: Ekran görüntüsü ya da ek bilgi / Screenshots or extra details

@@ -1,0 +1,27 @@
+name: Özellik öner / Feature request
+description: voe için bir fikrin var. You have an idea for voe.
+labels: ["öneri"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Neyi kolaylaştırmalı? / What should it make easier?
+      description: Hangi durumda ihtiyaç duyuyorsun? When do you need it?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Önerin / Your idea
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Alan / Area
+      options:
+        - Geliştirici araçları / Developer tools
+        - Sekmeler ve gezinme / Tabs & navigation
+        - voe Kalkanı / Shield
+        - voe mobil / Mobile
+        - Diğer / Other
