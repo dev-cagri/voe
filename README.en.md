@@ -69,6 +69,23 @@
 - **One-click cleanup.** “Clear site data” deletes the site’s cookies, storage and service workers, then reloads the page. A hard reload and the page source are one click away too.
 - **Full Chromium DevTools** is always available with `⌥⌘I`.
 
+## Privacy: what you look at is your business
+
+On an ordinary browser, your internet provider and anyone on your network can see which sites you visit. voe closes that off by default:
+
+- **Encrypted DNS (DNS-over-HTTPS).** Site names are looked up over an encrypted channel. **Strict mode** never falls back to plain DNS. You can pick Cloudflare, Quad9, Mullvad, AdGuard or your own server.
+- **Encrypted site name (ECH).** On sites that support it, even the domain at the start of the secure connection stays hidden.
+- **HTTPS first.** Addresses always open over an encrypted connection. If a site can’t do HTTPS, voe asks before continuing.
+- **Your data is encrypted on disk.** History, bookmarks, the reading list, sessions and passwords are stored with AES-256-GCM, and the key lives in the macOS Keychain.
+- **Tracker blocking, GPC and WebRTC protection.** voe Shield stops trackers. Sites receive a “don’t sell my data” signal, and your local IP address doesn’t leak.
+- **Privacy check.** One button in Settings verifies all of this live.
+
+## Sync: end-to-end encrypted, no account
+
+Bookmarks (with folders), passwords, history, open tabs, the reading list and settings stay in sync between your Mac and your phone. There’s no account or email: scan the QR code on the desktop **Senkron** page with your phone.
+
+Every record is encrypted on the device with **AES-256-GCM**. The server only sees meaningless encrypted blobs and can’t read URLs, titles or passwords. The key exists only on your devices. **Reset sync** cuts off a lost device in one step.
+
 ## For every day
 
 | | |
@@ -128,10 +145,10 @@ voe checks this repository’s [latest release](https://github.com/dev-cagri/voe
 | `⌥⌘R` | Reader mode | `⇧⌘R` | Reload ignoring cache |
 | `⇧⌘D` | Add to reading list | `⇧⌘2` / `⌥⇧⌘2` | Screenshot / full page |
 
-## Privacy
+## Data and telemetry
 
 - No telemetry: no usage statistics, crash reports or advertising IDs.
-- History, bookmarks, passwords, the reading list and settings stay on your Mac; passwords are encrypted with the macOS Keychain.
+- Your data stays on your devices. With sync on, only end-to-end encrypted records reach the server.
 - The local-server scan, Toolbox, JSON viewer and QR codes run entirely on your device.
 - voe makes only three connections on its own: Shield filter-list updates, site icons for bookmarks, and the update check. The update check goes to GitHub, carries only the version and can be turned off.
 

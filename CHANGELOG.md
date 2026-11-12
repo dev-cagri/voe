@@ -1,5 +1,22 @@
 # Sürüm notları
 
+## 0.2.0 — gizlilik ve senkron
+
+**Gizlilik: internet sağlayıcın neye baktığını görmez**
+- Şifreli DNS (DNS-over-HTTPS) varsayılan açık; katı mod düz DNS’e hiç düşmez. Sağlayıcı seçilebilir (Cloudflare, Quad9, Mullvad, AdGuard, Google, özel).
+- Şifreli site adı (ECH): destekleyen sitelerde bağlanılan alan adı da gizli.
+- Önce HTTPS: her adres şifreli bağlantıyla açılır; HTTPS sunmayan ya da sertifikası geçersiz sitelerde önce sorulur.
+- Yerel veriler diskte şifreli (AES-256-GCM, anahtar Anahtar Zinciri’nde): geçmiş, yer imleri, okuma listesi, oturum, ayarlar.
+- Global Privacy Control sinyali ve WebRTC IP koruması.
+- Ayarlar’da canlı **Gizlilik denetimi**.
+
+**Senkron: uçtan uca şifreli, hesapsız**
+- Yer imleri (klasörleriyle), şifreler, geçmiş, açık sekmeler, okuma listesi ve ayarlar Mac ile telefon arasında eşitlenir.
+- QR koduyla eşleşme; sunucu yalnızca şifreli blokları görür. “Diğer cihazlardaki sekmeler” ⋮ menüsünde ve komut paletinde.
+
+**Diğer**
+- Yeni sekmede yazılanlar doğrudan adres çubuğuna gider.
+
 ## 0.1.0 — ilk sürüm
 
 **Geliştiriciler için**

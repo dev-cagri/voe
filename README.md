@@ -69,6 +69,23 @@
 - **Tek tıkla temizlik.** “Site verilerini sil” düğmesi o sitenin çerezlerini, depolamasını ve service worker’larını silip sayfayı yeniler. Sert yenileme ve sayfa kaynağı da bir tık uzakta.
 - **Tam Chromium DevTools** her zaman `⌥⌘I` ile açılır.
 
+## Gizlilik: neye baktığın yalnızca seni ilgilendirir
+
+İnternet sağlayıcın ve aynı ağdakiler, sıradan bir tarayıcıda hangi sitelere girdiğini görebilir. voe bunu varsayılan olarak kapatır:
+
+- **Şifreli DNS (DNS-over-HTTPS).** Açtığın sitelerin adları şifreli sorulur. **Katı mod** düz DNS’e hiç düşmez. Sağlayıcı olarak Cloudflare, Quad9, Mullvad, AdGuard ya da kendi sunucun seçilebilir.
+- **Şifreli site adı (ECH).** Destekleyen sitelerde bağlandığın alan adı, şifreli bağlantının başında bile görünmez.
+- **Önce HTTPS.** Adresler her zaman şifreli bağlantıyla açılır. Site desteklemiyorsa devam etmeden önce sorulur.
+- **Verilerin cihazda şifreli.** Geçmiş, yer imleri, okuma listesi, oturum ve şifreler diskte AES-256-GCM ile saklanır; anahtar macOS Anahtar Zinciri’ndedir.
+- **İzleyici engelleme, GPC ve WebRTC koruması.** voe Kalkanı izleyicileri durdurur. Sitelere “verimi satma” sinyali gider ve yerel IP adresin sızmaz.
+- **Gizlilik denetimi.** Ayarlar’daki tek bir düğme hepsini canlı olarak doğrular.
+
+## Senkron: uçtan uca şifreli, hesapsız
+
+Yer imleri (klasörleriyle), şifreler, geçmiş, açık sekmeler, okuma listesi ve ayarlar Mac’in ve telefonun arasında eşitlenir. Hesap ya da e-posta yoktur. Masaüstündeki **Senkron** sayfasında QR kodunu telefonla okutman yeterli.
+
+Her kayıt cihazda **AES-256-GCM** ile şifrelenir. Sunucu yalnızca anlamsız şifreli blokları görür: URL, başlık ya da şifre göremez. Anahtar yalnızca senin cihazlarında durur. Kaybolan bir cihazın erişimini **Senkronu sıfırla** ile tek adımda kesebilirsin.
+
 ## Her gün için
 
 | | |
@@ -128,10 +145,10 @@ voe açılışta ve 6 saatte bir bu deponun [son sürümüne](https://github.com
 | `⌥⌘R` | Okuma modu | `⇧⌘R` | Önbelleği atlayarak yenile |
 | `⇧⌘D` | Okuma listesine ekle | `⇧⌘2` / `⌥⇧⌘2` | Ekran görüntüsü / tam sayfa |
 
-## Gizlilik
+## Veri ve telemetri
 
 - Telemetri yok: kullanım istatistiği, çökme raporu ya da reklam kimliği toplanmaz.
-- Geçmiş, yer imleri, şifreler, okuma listesi ve ayarlar yalnızca bu Mac’te durur; şifreler macOS Anahtar Zinciri ile şifrelenir.
+- Veriler yalnızca cihazlarında durur. Senkron açıksa sunucuya yalnızca uçtan uca şifreli kayıtlar gider.
 - Yerel sunucu taraması, Araç Kutusu, JSON görüntüleyici ve QR kodları tamamen cihazda çalışır.
 - voe kendiliğinden yalnızca üç bağlantı kurar: Kalkan filtre listelerinin güncellenmesi, yer imlerinin site simgeleri ve güncelleme denetimi. Güncelleme denetimi GitHub’a gider, yalnızca sürüm bilgisini içerir ve kapatılabilir.
 
