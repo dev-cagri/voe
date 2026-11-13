@@ -1,5 +1,13 @@
 # Sürüm notları
 
+## 0.2.9
+
+- **Yeni sekme yeniden düzenlendi:** kısayollar logonun hemen altında, kartlar onların altında; kartlar aynı boyda, düzgün bir ızgarada.
+- **Dokuz yeni kart:** Haberler (Hacker News, BBC Türkçe, Webrazzi, GitHub Blog ya da kendi RSS/Atom adresin), Son depremler (Türkiye ve çevresi, en yakın ile göre), Namaz vakitleri, Dünya saatleri, Takvim (hicri tarihle), Geri sayım, Notlar (kartın içine yaz, otomatik kaydedilir), Yapılacaklar ve Okuma listesi.
+- **Hava durumunda birden çok şehir:** Vakit şehrinin yanına istediğin şehirleri ekle; Türkiye'deki iller anında, dünyadaki tüm şehirler aramayla bulunur.
+- **Sürükle-bırak:** kartı herhangi bir yerinden tutup sürükle; diğer kartlar akıcı biçimde yer açar, Esc iptal eder. Kart menüsünde "Sola taşı / Sağa taşı" da var.
+- **Şifre otomatik doldurma listesi yenilendi:** sayfanın açık/koyu rengine uyar, alanın genişliğinde açılır, yazdıkça süzülür ve eşleşen kısmı vurgular; ↑ ↓ ile gezinip Enter ile doldurursun, Esc kapatır. Aşağıda yer yoksa yukarı açılır; altta "Şifreleri yönet" bağlantısı var.
+
 ## 0.2.8
 
 - Yeni sekme artık ekrana sığıyor; gereksiz dikey kaydırma kaldırıldı (boşluklar derli toplandı).

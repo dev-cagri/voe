@@ -101,6 +101,7 @@ Every record is encrypted on the device with **AES-256-GCM**. The server only se
 | **Passwords** | Encrypted with the macOS Keychain, autofill, reveal with Touch ID |
 | **Extensions** | Install from the Chrome Web Store |
 | **Speed meter** | Page load time in the address bar, with a DNS-to-download breakdown |
+| **New tab cards** | Markets, multi-city weather, news (RSS), recent earthquakes, prayer times, world clocks, calendar, countdown, notes, to-dos, reading list and site links; drag to reorder |
 | **Import from another browser** | Bookmarks, passwords, saved cards, addresses and history from Chrome, Edge, Brave, Vivaldi, Opera and Chromium in one step — everything stays on your device |
 | **Vakit** | Time left until the next prayer, Hijri date and a tasbih counter (computed on device) |
 

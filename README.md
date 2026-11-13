@@ -101,6 +101,7 @@ Her kayıt cihazda **AES-256-GCM** ile şifrelenir. Sunucu yalnızca anlamsız �
 | **Şifreler** | Anahtar Zinciri ile şifreli saklama, otomatik doldurma, Touch ID ile gösterme |
 | **Eklentiler** | Chrome Web Mağazası’ndan kurulum |
 | **Hız ölçer** | Adres çubuğunda sayfa yükleme süresi; DNS’ten indirmeye ayrıntılı döküm |
+| **Yeni sekme kartları** | Piyasa, çok şehirli hava durumu, haberler (RSS), son depremler, namaz vakitleri, dünya saatleri, takvim, geri sayım, notlar, yapılacaklar, okuma listesi ve siteler; sürükleyerek sırala |
 | **Tarayıcıdan içe aktar** | Chrome, Edge, Brave, Vivaldi, Opera ve Chromium’dan yer imleri, şifreler, kayıtlı kartlar, adresler ve geçmişi tek adımda — her şey cihazda kalır |
 | **Vakit** | Sıradaki ezan vaktine kalan süre, hicri tarih ve zikirmatik (cihazda hesaplanır) |
 
