@@ -1,5 +1,9 @@
 # Sürüm notları
 
+## 0.2.10
+
+- **Düzeltme:** Geçersiz (kendinden imzalı) sertifikalı bir siteye “yine de devam et” ile girdikten sonra o site WebSocket bağlantısı açınca (ör. aaPanel'de terminal) voe çöküyordu. Artık çökmüyor; terminal ve benzeri canlı bağlantılar çalışıyor.
+
 ## 0.2.9
 
 - **Yeni sekme yeniden düzenlendi:** kısayollar logonun hemen altında, kartlar onların altında; kartlar aynı boyda, düzgün bir ızgarada.
