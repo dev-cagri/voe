@@ -101,6 +101,7 @@ Every record is encrypted on the device with **AES-256-GCM**. The server only se
 | **Passwords** | Encrypted with the macOS Keychain, autofill, reveal with Touch ID |
 | **Extensions** | Install from the Chrome Web Store |
 | **Speed meter** | Page load time in the address bar, with a DNS-to-download breakdown |
+| **Import from another browser** | Bookmarks, passwords, saved cards, addresses and history from Chrome, Edge, Brave, Vivaldi, Opera and Chromium in one step — everything stays on your device |
 | **Vakit** | Time left until the next prayer, Hijri date and a tasbih counter (computed on device) |
 
 ## voe mobile
@@ -122,7 +123,7 @@ The iOS app is in **TestFlight** beta, and Android is on the way. It shares the 
 
 1. Download **[voe-mac-arm64.dmg](https://github.com/dev-cagri/voe/releases/latest/download/voe-mac-arm64.dmg)**, open it and drag **voe** into **Applications**.
 2. voe is signed with an Apple Developer ID and **notarized by Apple**; on first launch macOS only asks whether to open an app downloaded from the internet.
-3. You can make voe your default browser in **Ayarlar → Varsayılan tarayıcı** (Settings → Default browser). Chrome bookmarks import in one click; passwords import from a CSV file.
+3. You can make voe your default browser in **Ayarlar → Varsayılan tarayıcı** (Settings → Default browser). Bookmarks, passwords, saved cards, addresses and history from Chrome, Edge, Brave and other browsers import in one step from **⋮ → Tarayıcıdan İçe Aktar…** (Import from browser); everything stays on your device.
 
 **Requirements:** macOS 12 Monterey or later on Apple Silicon (M1 or newer).
 

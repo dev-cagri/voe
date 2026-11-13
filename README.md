@@ -101,6 +101,7 @@ Her kayıt cihazda **AES-256-GCM** ile şifrelenir. Sunucu yalnızca anlamsız �
 | **Şifreler** | Anahtar Zinciri ile şifreli saklama, otomatik doldurma, Touch ID ile gösterme |
 | **Eklentiler** | Chrome Web Mağazası’ndan kurulum |
 | **Hız ölçer** | Adres çubuğunda sayfa yükleme süresi; DNS’ten indirmeye ayrıntılı döküm |
+| **Tarayıcıdan içe aktar** | Chrome, Edge, Brave, Vivaldi, Opera ve Chromium’dan yer imleri, şifreler, kayıtlı kartlar, adresler ve geçmişi tek adımda — her şey cihazda kalır |
 | **Vakit** | Sıradaki ezan vaktine kalan süre, hicri tarih ve zikirmatik (cihazda hesaplanır) |
 
 ## voe mobil
@@ -122,7 +123,7 @@ iOS sürümü **TestFlight** beta aşamasında, Android sürümü hazırlanıyor
 
 1. **[voe-mac-arm64.dmg](https://github.com/dev-cagri/voe/releases/latest/download/voe-mac-arm64.dmg)** dosyasını indir, aç ve **voe**’yu **Uygulamalar** klasörüne sürükle.
 2. voe, Apple’ın Developer ID imzasıyla imzalanmış ve Apple tarafından **notarize edilmiştir**; ilk açılışta yalnızca “internetten indirildi, açılsın mı?” sorusu çıkar.
-3. İstersen **Ayarlar → Varsayılan tarayıcı** bölümünden voe’yu varsayılan tarayıcın yap. Chrome’daki yer imlerini tek tıkla, şifreleri CSV dosyasıyla içe aktarabilirsin.
+3. İstersen **Ayarlar → Varsayılan tarayıcı** bölümünden voe’yu varsayılan tarayıcın yap. Chrome, Edge, Brave gibi tarayıcılardaki yer imlerini, şifreleri, kartları, adresleri ve geçmişi **⋮ → Tarayıcıdan İçe Aktar…** ile tek adımda taşıyabilirsin.
 
 **Gereksinimler:** macOS 12 Monterey ya da üzeri, Apple Silicon (M1 ve sonrası).
 

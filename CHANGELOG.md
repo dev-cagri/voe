@@ -1,5 +1,12 @@
 # Sürüm notları
 
+## 0.2.5
+
+- **Chrome’dan (ve Edge, Brave, Vivaldi, Opera, Chromium’dan) tek adımda içe aktarma:** ⋮ → **Tarayıcıdan İçe Aktar…** ya da Şifreler sayfasındaki şerit, kurulu tarayıcıları ve her birindeki öğe sayısını (yer imi, şifre, kart, adres, geçmiş) bulur; neyin aktarılacağını seçip tek düğmeyle taşır. voe ilk açılışta da önerir.
+  - **Şifreler ve kayıtlı kartlar** çözülürken macOS bir kez izin ister; bu olmadan diğer türler yine aktarılır. Çözme tamamen bu cihazda olur, hiçbir veri dışarıya gönderilmez.
+  - **Yer imleri, adresler ve geçmiş** (son 180 gün) izne gerek olmadan aktarılır. Daha önce aktarılanlar tekrar eklenmez.
+- **Kayıtlı kartlar ve adresler:** Şifreler sayfasına kart ve adres bölümleri eklendi. Kart numaraları diskte şifreli saklanır; görmek ya da kopyalamak için Touch ID istenir, pano 60 sn sonra temizlenir.
+
 ## 0.2.4
 
 - **Yeni sekmede kendi kartların:** “+ Kart ekle” ile
