@@ -82,7 +82,7 @@
 
 ## Senkron: uçtan uca şifreli, hesapsız
 
-Yer imleri (klasörleriyle), şifreler, geçmiş, açık sekmeler, okuma listesi ve ayarlar Mac’in ve telefonun arasında eşitlenir. Hesap ya da e-posta yoktur. Masaüstündeki **Senkron** sayfasında QR kodunu telefonla okutman yeterli.
+Yer imleri (klasörleriyle), şifreler, geçmiş, açık sekmeler, okuma listesi ve ayarlar **birden çok cihaz** arasında eşitlenir — telefon ve istediğin kadar Mac. Hesap ya da e-posta yoktur. İlk eşleştirmede bir cihazda **Senkron** sayfasındaki QR kodunu diğerinde okutursun: telefon kamerayla, yeni bir Mac ise Senkron → **Kamerayla tara** ile. Kamera kullanamıyorsan eşleştirme bağlantısını kopyalayıp yapıştırırsın.
 
 Her kayıt cihazda **AES-256-GCM** ile şifrelenir. Sunucu yalnızca anlamsız şifreli blokları görür: URL, başlık ya da şifre göremez. Anahtar yalnızca senin cihazlarında durur. Kaybolan bir cihazın erişimini **Senkronu sıfırla** ile tek adımda kesebilirsin.
 

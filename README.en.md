@@ -82,7 +82,7 @@ On an ordinary browser, your internet provider and anyone on your network can se
 
 ## Sync: end-to-end encrypted, no account
 
-Bookmarks (with folders), passwords, history, open tabs, the reading list and settings stay in sync between your Mac and your phone. There’s no account or email: scan the QR code on the desktop **Senkron** page with your phone.
+Bookmarks (with folders), passwords, history, open tabs, the reading list and settings stay in sync across **multiple devices** — your phone and as many Macs as you like. There’s no account or email. To pair, show the QR code on the **Senkron** page of one device and read it on the other: the phone uses its camera, a new Mac uses Senkron → **Kamerayla tara** (Scan with camera). If you can’t use a camera, copy and paste the pairing link instead.
 
 Every record is encrypted on the device with **AES-256-GCM**. The server only sees meaningless encrypted blobs and can’t read URLs, titles or passwords. The key exists only on your devices. **Reset sync** cuts off a lost device in one step.
 

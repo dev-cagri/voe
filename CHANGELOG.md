@@ -1,5 +1,10 @@
 # Sürüm notları
 
+## 0.2.6
+
+- **Yeni bir bilgisayarı kamerayla eşleştir:** Senkron sayfasında **“Kamerayla tara”** ile, telefonundaki ya da başka bir bilgisayardaki **Cihaz ekle** QR kodunu okutup zincire katıl — artık uzun eşleştirme bağlantısını cihazlar arasında taşımana gerek yok. Bağlantıyı yapıştırma seçeneği de duruyor. (Mobilde eşleştirme QR'ı okutma zaten vardı.)
+- **İçe aktarmada yardım:** Bir tarayıcı bulunup da verisine erişilemezse (ör. voe'ya **Tam Disk Erişimi** verilmemişse), içe aktarma sayfası artık bunu söyleyip ayarları açan bir düğme gösterir. voe'yu dmg içinden değil, **Uygulamalar** klasöründen çalıştırın.
+
 ## 0.2.5
 
 - **Chrome’dan (ve Edge, Brave, Vivaldi, Opera, Chromium’dan) tek adımda içe aktarma:** ⋮ → **Tarayıcıdan İçe Aktar…** ya da Şifreler sayfasındaki şerit, kurulu tarayıcıları ve her birindeki öğe sayısını (yer imi, şifre, kart, adres, geçmiş) bulur; neyin aktarılacağını seçip tek düğmeyle taşır. voe ilk açılışta da önerir.
