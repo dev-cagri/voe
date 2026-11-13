@@ -1,5 +1,9 @@
 # Sürüm notları
 
+## 0.2.8
+
+- Yeni sekme artık ekrana sığıyor; gereksiz dikey kaydırma kaldırıldı (boşluklar derli toplandı).
+
 ## 0.2.7
 
 - Senkron sayfasında “Diğer cihazlardaki sekmeler” bölümünde site simgesi kocaman görünüyordu; düzeltildi.
