@@ -1,5 +1,12 @@
 # Sürüm notları
 
+## 0.3.1
+
+- **Dosya açma:** Finder’dan bir dosyayı sekme çubuğuna ya da yeni sekmeye sürükle, `⌘O` ile seç, Dock’taki voe’ya bırak ya da Finder’da “Birlikte Aç → voe” de. Her dosya kendi sekmesinde açılır.
+- **PDF görüntüleyici:** PDF’ler artık indirilmeden doğrudan sekmede açılıyor (sayfa küçük resimleri, yakınlaştırma, yazdırma).
+- **Tablo görüntüleyici:** Excel (xlsx, xlsm, xlsb, xls), ODS, CSV/TSV ve Numbers dosyaları voe’nun içinde açılıyor. Sayfa sekmeleri, sütun harfleri ve satır numaraları, formül çubuğu, klavyeyle gezinme ve aralık seçme var. `⌘C` Excel’e yapıştırılabilir biçimde kopyalar. Arama (Türkçe harflere duyarlı), CSV’ye aktarma ve Finder’da gösterme de var. Türkçe Excel’in kaydettiği noktalı virgüllü ve Windows-1254 kodlu CSV’ler doğru okunuyor; tarihler Türkçe biçimde. Yüz binlerce satırlık dosyalar da akıcı. Dosya bu Mac’ten çıkmaz.
+- **Yeni sekme kartları en fazla dört:** kartlar tek satırda kalıyor, sayfa kaymıyor. Dört kart varken “Kart ekle” gösterilmiyor.
+
 ## 0.3.0
 
 - **voe AI, bu Mac’te çalışan yapay zekâ (isteğe bağlı):** çeviri, özet, açıklama, yazım düzeltme ve sohbet. Model Mac’in GPU’sunda çalışır; yazdıkların hiçbir yere gönderilmez. Kurmadığın sürece hiçbir şey inmez. Yeni sekmedeki karttan ya da ✦ düğmesinden Qwen3 4B (önerilen, 2,3 GB) veya Gemma 2 2B (hafif, 1,5 GB) kurulur.

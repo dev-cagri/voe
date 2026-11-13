@@ -115,11 +115,12 @@ voe AI is **optional**. Nothing is downloaded unless you install it. You can ins
 | **Passwords** | Encrypted with the macOS Keychain, autofill, reveal with Touch ID |
 | **Extensions** | Install from the Chrome Web Store |
 | **Speed meter** | Page load time in the address bar, with a DNS-to-download breakdown |
-| **New tab cards** | Markets, multi-city weather, news (RSS), recent earthquakes, prayer times, world clocks, calendar, countdown, notes, to-dos, reading list and site links; drag to reorder |
+| **New tab cards** | Up to four cards in a single row: markets, multi-city weather, news (RSS), recent earthquakes, prayer times, world clocks, calendar, countdown, notes, to-dos, reading list and site links; drag to reorder |
 | **Import from another browser** | Bookmarks, passwords, saved cards, addresses and history from Chrome, Edge, Brave, Vivaldi, Opera and Chromium in one step — everything stays on your device |
 | **Vakit** | Next prayer time, Hijri date and a tasbih counter (computed on device). The button is dynamic: the countdown starts an hour before. Can be turned off in Settings |
 | **Web notifications** | Sites ask for permission and your choice is remembered; clicking a notification brings its tab forward |
 | **Downloads** | Drag a finished file from the list to Finder, the desktop or a website |
+| **Open files** | Drag from Finder onto the tab strip, press `⌘O` or use “Open With → voe”: PDF viewer; a spreadsheet viewer for Excel (xlsx, xls), ODS, CSV and Numbers (sheet tabs, formula bar, search, copy, export to CSV) |
 
 ## voe mobile
 
@@ -163,7 +164,7 @@ Coming from 0.2.10 or earlier, install the `.dmg` once by hand. Automatic downlo
 | `⇧⌘F` | Focus mode | `⌥⌘U` | View source |
 | `⌥⌘R` | Reader mode | `⇧⌘R` | Reload ignoring cache |
 | `⇧⌘D` | Add to reading list | `⇧⌘2` / `⌥⇧⌘2` | Screenshot / full page |
-| `⌥⌘A` | voe AI panel | | |
+| `⌥⌘A` | voe AI panel | `⌘O` | Open a file (PDF, Excel, CSV…) |
 
 ## Data and telemetry
 
@@ -178,6 +179,6 @@ Found a bug or have an idea? [Open an issue](https://github.com/dev-cagri/voe/is
 
 ## License
 
-voe is free; its source code is not public. See [LICENSE](LICENSE) for details. voe builds on open-source projects, each under its own license: [Electron](https://www.electronjs.org/) and Chromium (MIT/BSD), [Ghostery adblocker](https://github.com/ghostery/adblocker) (MPL-2.0), [Mozilla Readability](https://github.com/mozilla/readability) (Apache-2.0), [electron-chrome-extensions](https://github.com/samuelmaddock/electron-browser-shell) (MIT), [adhan-js](https://github.com/batoulapps/adhan-js) (MIT), [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) (MIT), [WebLLM](https://github.com/mlc-ai/web-llm) (Apache-2.0) and [Sora](https://github.com/sora-xor/sora-font) (OFL-1.1). voe AI models are downloaded separately: [Qwen3](https://huggingface.co/Qwen/Qwen3-4B) (Apache-2.0), [Gemma 2](https://ai.google.dev/gemma/terms) (Gemma Terms of Use).
+voe is free; its source code is not public. See [LICENSE](LICENSE) for details. voe builds on open-source projects, each under its own license: [Electron](https://www.electronjs.org/) and Chromium (MIT/BSD), [Ghostery adblocker](https://github.com/ghostery/adblocker) (MPL-2.0), [Mozilla Readability](https://github.com/mozilla/readability) (Apache-2.0), [electron-chrome-extensions](https://github.com/samuelmaddock/electron-browser-shell) (MIT), [adhan-js](https://github.com/batoulapps/adhan-js) (MIT), [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) (MIT), [WebLLM](https://github.com/mlc-ai/web-llm) (Apache-2.0), [SheetJS](https://sheetjs.com) (Apache-2.0) and [Sora](https://github.com/sora-xor/sora-font) (OFL-1.1). voe AI models are downloaded separately: [Qwen3](https://huggingface.co/Qwen/Qwen3-4B) (Apache-2.0), [Gemma 2](https://ai.google.dev/gemma/terms) (Gemma Terms of Use).
 
 <p align="center"><sub>© 2026 voe</sub></p>

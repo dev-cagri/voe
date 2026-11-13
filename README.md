@@ -115,11 +115,12 @@ voe AI **isteğe bağlıdır**. Kurmadığın sürece hiçbir şey indirilmez. K
 | **Şifreler** | Anahtar Zinciri ile şifreli saklama, otomatik doldurma, Touch ID ile gösterme |
 | **Eklentiler** | Chrome Web Mağazası’ndan kurulum |
 | **Hız ölçer** | Adres çubuğunda sayfa yükleme süresi; DNS’ten indirmeye ayrıntılı döküm |
-| **Yeni sekme kartları** | Piyasa, çok şehirli hava durumu, haberler (RSS), son depremler, namaz vakitleri, dünya saatleri, takvim, geri sayım, notlar, yapılacaklar, okuma listesi ve siteler; sürükleyerek sırala |
+| **Yeni sekme kartları** | En fazla dört kart, tek satır: piyasa, çok şehirli hava durumu, haberler (RSS), son depremler, namaz vakitleri, dünya saatleri, takvim, geri sayım, notlar, yapılacaklar, okuma listesi ve siteler; sürükleyerek sırala |
 | **Tarayıcıdan içe aktar** | Chrome, Edge, Brave, Vivaldi, Opera ve Chromium’dan yer imleri, şifreler, kayıtlı kartlar, adresler ve geçmişi tek adımda — her şey cihazda kalır |
 | **Vakit** | Sıradaki ezan vakti, hicri tarih ve zikirmatik (cihazda hesaplanır). Düğme dinamiktir: vakte bir saat kalınca geri sayım başlar. Ayarlar’dan kapatılabilir |
 | **Web bildirimleri** | Siteler izin ister, kararın hatırlanır; bildirime tıklayınca sekmesi öne gelir |
 | **İndirilenler** | Bitmiş dosyayı listeden Finder’a, masaüstüne ya da bir siteye sürükle |
+| **Dosya açma** | Finder’dan sekme çubuğuna sürükle, `⌘O` ya da “Birlikte Aç → voe”: PDF görüntüleyici; Excel (xlsx, xls), ODS, CSV ve Numbers için tablo görüntüleyici (sayfa sekmeleri, formül çubuğu, arama, kopyalama, CSV’ye aktarma) |
 
 ## voe mobil
 
@@ -163,7 +164,7 @@ voe açılışta ve 6 saatte bir bu deponun [son sürümüne](https://github.com
 | `⇧⌘F` | Odak modu | `⌥⌘U` | Sayfa kaynağı |
 | `⌥⌘R` | Okuma modu | `⇧⌘R` | Önbelleği atlayarak yenile |
 | `⇧⌘D` | Okuma listesine ekle | `⇧⌘2` / `⌥⇧⌘2` | Ekran görüntüsü / tam sayfa |
-| `⌥⌘A` | voe AI paneli | | |
+| `⌥⌘A` | voe AI paneli | `⌘O` | Dosya aç (PDF, Excel, CSV…) |
 
 ## Veri ve telemetri
 
@@ -178,6 +179,6 @@ Hata mı buldun, bir fikrin mi var? [Yeni bir kayıt aç](https://github.com/dev
 
 ## Lisans
 
-voe ücretsizdir; kaynak kodu açık değildir. Ayrıntılar için [LICENSE](LICENSE) dosyasına bak. voe; [Electron](https://www.electronjs.org/) ve Chromium (MIT/BSD), [Ghostery adblocker](https://github.com/ghostery/adblocker) (MPL-2.0), [Mozilla Readability](https://github.com/mozilla/readability) (Apache-2.0), [electron-chrome-extensions](https://github.com/samuelmaddock/electron-browser-shell) (MIT), [adhan-js](https://github.com/batoulapps/adhan-js) (MIT), [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) (MIT), [WebLLM](https://github.com/mlc-ai/web-llm) (Apache-2.0) ve [Sora](https://github.com/sora-xor/sora-font) (OFL-1.1) gibi açık kaynak projelere dayanır; bu projelerin lisansları kendi koşullarıyla geçerlidir. voe AI modelleri ayrıca indirilir: [Qwen3](https://huggingface.co/Qwen/Qwen3-4B) (Apache-2.0), [Gemma 2](https://ai.google.dev/gemma/terms) (Gemma Kullanım Koşulları).
+voe ücretsizdir; kaynak kodu açık değildir. Ayrıntılar için [LICENSE](LICENSE) dosyasına bak. voe; [Electron](https://www.electronjs.org/) ve Chromium (MIT/BSD), [Ghostery adblocker](https://github.com/ghostery/adblocker) (MPL-2.0), [Mozilla Readability](https://github.com/mozilla/readability) (Apache-2.0), [electron-chrome-extensions](https://github.com/samuelmaddock/electron-browser-shell) (MIT), [adhan-js](https://github.com/batoulapps/adhan-js) (MIT), [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) (MIT), [WebLLM](https://github.com/mlc-ai/web-llm) (Apache-2.0), [SheetJS](https://sheetjs.com) (Apache-2.0) ve [Sora](https://github.com/sora-xor/sora-font) (OFL-1.1) gibi açık kaynak projelere dayanır; bu projelerin lisansları kendi koşullarıyla geçerlidir. voe AI modelleri ayrıca indirilir: [Qwen3](https://huggingface.co/Qwen/Qwen3-4B) (Apache-2.0), [Gemma 2](https://ai.google.dev/gemma/terms) (Gemma Kullanım Koşulları).
 
 <p align="center"><sub>© 2026 voe</sub></p>
