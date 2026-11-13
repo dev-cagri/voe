@@ -1,5 +1,9 @@
 # Sürüm notları
 
+## 0.2.7
+
+- Senkron sayfasında “Diğer cihazlardaki sekmeler” bölümünde site simgesi kocaman görünüyordu; düzeltildi.
+
 ## 0.2.6
 
 - **Yeni bir bilgisayarı kamerayla eşleştir:** Senkron sayfasında **“Kamerayla tara”** ile, telefonundaki ya da başka bir bilgisayardaki **Cihaz ekle** QR kodunu okutup zincire katıl — artık uzun eşleştirme bağlantısını cihazlar arasında taşımana gerek yok. Bağlantıyı yapıştırma seçeneği de duruyor. (Mobilde eşleştirme QR'ı okutma zaten vardı.)
