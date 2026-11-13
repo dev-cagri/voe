@@ -23,7 +23,7 @@
 
 <br>
 
-**voe** is a calm, fast, Chromium-based browser for macOS. It keeps everyday browsing quiet, and it puts the tools web developers reach for all day one click away inside the browser: device emulation, console errors, local dev servers, a JSON viewer and an offline toolbox. The **voe Shield** ad and tracker blocker is always on. The interface is in Turkish.
+**voe** is a calm, fast, Chromium-based browser for macOS. It keeps everyday browsing quiet, and it puts the tools web developers reach for all day one click away inside the browser: device emulation, console errors, local dev servers, a JSON viewer and an offline toolbox. The **voe Shield** ad and tracker blocker is always on. If you want, **voe AI** translates, summarizes and chats entirely on your Mac. The interface is in Turkish.
 
 <p align="center">
   <img src=".github/assets/screen-newtab.png" alt="voe new tab: dotted grid, logo and search in the middle, shortcuts and running local servers" width="100%">
@@ -86,6 +86,20 @@ Bookmarks (with folders), passwords, history, open tabs, the reading list and se
 
 Every record is encrypted on the device with **AES-256-GCM**. The server only sees meaningless encrypted blobs and can’t read URLs, titles or passwords. The key exists only on your devices. **Reset sync** cuts off a lost device in one step.
 
+## voe AI: AI that runs on this Mac
+
+<p align="center">
+  <img src=".github/assets/ai-panel.png" alt="A news page in voe; the voe AI side panel shows “Summarize this page” and a summary generated on the Mac" width="100%">
+</p>
+
+voe AI is **optional**. Nothing is downloaded unless you install it. You can install it from the voe AI card on the new tab or the ✦ button in the toolbar.
+
+- **Side panel** (`⌥⌘A` or ✦): chat, ask it to **summarize this page**, then ask follow-up questions about the page. The text tools translate, summarize, explain and fix spelling.
+- **Selected text** → right-click → **voe AI**: translate into Turkish or English, summarize, explain, fix spelling. The result streams next to the selection. In editable fields, **Yerine yaz** (Replace) swaps the text in one click.
+- **Entirely on device.** The model and engine ([WebLLM](https://github.com/mlc-ai/web-llm)) run on your Mac’s GPU (WebGPU). What you type, the answers and page text never go to a server and are not saved. Only the model files download, once, from the MLC repository on Hugging Face. After that it works offline. The engine shuts down after 5 idle minutes and frees its memory.
+- **Models:** Qwen3 4B (recommended, 2.3 GB, ~3.4 GB memory while running) or Gemma 2 2B (light, 1.5 GB). Switch or remove them from the panel’s Model section.
+- Needs Apple Silicon and about 4 GB of free disk. Small models can be wrong, so double-check anything important. It has no internet access and doesn’t know current events.
+
 ## For every day
 
 | | |
@@ -103,7 +117,9 @@ Every record is encrypted on the device with **AES-256-GCM**. The server only se
 | **Speed meter** | Page load time in the address bar, with a DNS-to-download breakdown |
 | **New tab cards** | Markets, multi-city weather, news (RSS), recent earthquakes, prayer times, world clocks, calendar, countdown, notes, to-dos, reading list and site links; drag to reorder |
 | **Import from another browser** | Bookmarks, passwords, saved cards, addresses and history from Chrome, Edge, Brave, Vivaldi, Opera and Chromium in one step — everything stays on your device |
-| **Vakit** | Time left until the next prayer, Hijri date and a tasbih counter (computed on device) |
+| **Vakit** | Next prayer time, Hijri date and a tasbih counter (computed on device). The button is dynamic: the countdown starts an hour before. Can be turned off in Settings |
+| **Web notifications** | Sites ask for permission and your choice is remembered; clicking a notification brings its tab forward |
+| **Downloads** | Drag a finished file from the list to Finder, the desktop or a website |
 
 ## voe mobile
 
@@ -147,13 +163,14 @@ Coming from 0.2.10 or earlier, install the `.dmg` once by hand. Automatic downlo
 | `⇧⌘F` | Focus mode | `⌥⌘U` | View source |
 | `⌥⌘R` | Reader mode | `⇧⌘R` | Reload ignoring cache |
 | `⇧⌘D` | Add to reading list | `⇧⌘2` / `⌥⇧⌘2` | Screenshot / full page |
+| `⌥⌘A` | voe AI panel | | |
 
 ## Data and telemetry
 
 - No telemetry: no usage statistics, crash reports or advertising IDs.
 - Your data stays on your devices. With sync on, only end-to-end encrypted records reach the server.
-- The local-server scan, Toolbox, JSON viewer and QR codes run entirely on your device.
-- voe makes only three connections on its own: Shield filter-list updates, site icons for bookmarks, and the update check. The update check goes to GitHub, carries only the version and can be turned off. When a new version exists, its package also downloads from GitHub.
+- The local-server scan, Toolbox, JSON viewer, QR codes and voe AI run entirely on your device.
+- voe makes only three connections on its own: Shield filter-list updates, site icons for bookmarks, and the update check. The update check goes to GitHub, carries only the version and can be turned off. When a new version exists, its package also downloads from GitHub. If you install voe AI, the model files download once from Hugging Face; nothing you type is sent anywhere.
 
 ## Feedback
 
@@ -161,6 +178,6 @@ Found a bug or have an idea? [Open an issue](https://github.com/dev-cagri/voe/is
 
 ## License
 
-voe is free; its source code is not public. See [LICENSE](LICENSE) for details. voe builds on open-source projects, each under its own license: [Electron](https://www.electronjs.org/) and Chromium (MIT/BSD), [Ghostery adblocker](https://github.com/ghostery/adblocker) (MPL-2.0), [Mozilla Readability](https://github.com/mozilla/readability) (Apache-2.0), [electron-chrome-extensions](https://github.com/samuelmaddock/electron-browser-shell) (MIT), [adhan-js](https://github.com/batoulapps/adhan-js) (MIT), [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) (MIT) and [Sora](https://github.com/sora-xor/sora-font) (OFL-1.1).
+voe is free; its source code is not public. See [LICENSE](LICENSE) for details. voe builds on open-source projects, each under its own license: [Electron](https://www.electronjs.org/) and Chromium (MIT/BSD), [Ghostery adblocker](https://github.com/ghostery/adblocker) (MPL-2.0), [Mozilla Readability](https://github.com/mozilla/readability) (Apache-2.0), [electron-chrome-extensions](https://github.com/samuelmaddock/electron-browser-shell) (MIT), [adhan-js](https://github.com/batoulapps/adhan-js) (MIT), [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) (MIT), [WebLLM](https://github.com/mlc-ai/web-llm) (Apache-2.0) and [Sora](https://github.com/sora-xor/sora-font) (OFL-1.1). voe AI models are downloaded separately: [Qwen3](https://huggingface.co/Qwen/Qwen3-4B) (Apache-2.0), [Gemma 2](https://ai.google.dev/gemma/terms) (Gemma Terms of Use).
 
 <p align="center"><sub>© 2026 voe</sub></p>

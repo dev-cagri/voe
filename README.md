@@ -23,7 +23,7 @@
 
 <br>
 
-**voe**, Chromium tabanlı, sade ve hızlı bir macOS tarayıcısı. Günlük gezinmeyi sakinleştirir; web geliştirenlerin her gün açıp kapattığı araçları da tarayıcının içine, tek tıka koyar. Cihaz öykünmesi, konsol hataları, yerel sunucular, JSON görüntüleyici ve çevrimdışı bir araç kutusu hazır gelir. Reklam ve izleyici engelleyici **voe Kalkanı** her zaman açıktır.
+**voe**, Chromium tabanlı, sade ve hızlı bir macOS tarayıcısı. Günlük gezinmeyi sakinleştirir; web geliştirenlerin her gün açıp kapattığı araçları da tarayıcının içine, tek tıka koyar. Cihaz öykünmesi, konsol hataları, yerel sunucular, JSON görüntüleyici ve çevrimdışı bir araç kutusu hazır gelir. Reklam ve izleyici engelleyici **voe Kalkanı** her zaman açıktır. İstersen **voe AI** ile çeviri, özet ve sohbet de tamamen Mac’inde çalışır.
 
 <p align="center">
   <img src=".github/assets/screen-newtab.png" alt="voe yeni sekme: noktalı ızgara, ortada logo ve arama, kısayollar ve çalışan yerel sunucular" width="100%">
@@ -86,6 +86,20 @@ Yer imleri (klasörleriyle), şifreler, geçmiş, açık sekmeler, okuma listesi
 
 Her kayıt cihazda **AES-256-GCM** ile şifrelenir. Sunucu yalnızca anlamsız şifreli blokları görür: URL, başlık ya da şifre göremez. Anahtar yalnızca senin cihazlarında durur. Kaybolan bir cihazın erişimini **Senkronu sıfırla** ile tek adımda kesebilirsin.
 
+## voe AI: bu Mac’te çalışan yapay zekâ
+
+<p align="center">
+  <img src=".github/assets/ai-panel.png" alt="voe’da bir haber sayfası; sağdan açılan voe AI panelinde “Bu sayfayı özetle” ve Mac’te üretilmiş Türkçe özet" width="100%">
+</p>
+
+voe AI **isteğe bağlıdır**. Kurmadığın sürece hiçbir şey indirilmez. Kurulum, yeni sekmedeki voe AI kartından ya da araç çubuğundaki ✦ düğmesinden yapılır.
+
+- **Yan panel** (`⌥⌘A` ya da ✦): sohbet et, **Bu sayfayı özetle** de, ardından sayfa hakkında soru sor. Metin araçlarıyla çevir, özetle, açıkla, yazımı düzelt.
+- **Seçili metin** → sağ tık → **voe AI**: Türkçeye ya da İngilizceye çevir, özetle, açıkla, yazımı düzelt. Sonuç seçimin yanında akar. Düzenlenebilir alanlarda **Yerine yaz** ile tek tıkla değiştirirsin.
+- **Tamamen cihazda.** Model ve motor ([WebLLM](https://github.com/mlc-ai/web-llm)) Mac’in GPU’sunda (WebGPU) çalışır. Yazdıkların, yanıtlar ve sayfa metinleri hiçbir sunucuya gitmez, kaydedilmez. İnternetten yalnızca model dosyaları bir kez, Hugging Face’teki MLC deposundan iner. Sonrasında internetsiz çalışır. Motor 5 dakika kullanılmazsa kapanır ve belleği boşaltır.
+- **Modeller:** Qwen3 4B (önerilen, 2,3 GB, çalışırken ~3,4 GB bellek) ya da Gemma 2 2B (hafif, 1,5 GB). Panelin Model bölümünden değiştirilir ya da kaldırılır.
+- Apple Silicon ve yaklaşık 4 GB boş disk ister. Küçük modeller yanılabilir; önemli bilgileri doğrula. İnternete erişimi olmadığı için güncel olayları bilmez.
+
 ## Her gün için
 
 | | |
@@ -103,7 +117,9 @@ Her kayıt cihazda **AES-256-GCM** ile şifrelenir. Sunucu yalnızca anlamsız �
 | **Hız ölçer** | Adres çubuğunda sayfa yükleme süresi; DNS’ten indirmeye ayrıntılı döküm |
 | **Yeni sekme kartları** | Piyasa, çok şehirli hava durumu, haberler (RSS), son depremler, namaz vakitleri, dünya saatleri, takvim, geri sayım, notlar, yapılacaklar, okuma listesi ve siteler; sürükleyerek sırala |
 | **Tarayıcıdan içe aktar** | Chrome, Edge, Brave, Vivaldi, Opera ve Chromium’dan yer imleri, şifreler, kayıtlı kartlar, adresler ve geçmişi tek adımda — her şey cihazda kalır |
-| **Vakit** | Sıradaki ezan vaktine kalan süre, hicri tarih ve zikirmatik (cihazda hesaplanır) |
+| **Vakit** | Sıradaki ezan vakti, hicri tarih ve zikirmatik (cihazda hesaplanır). Düğme dinamiktir: vakte bir saat kalınca geri sayım başlar. Ayarlar’dan kapatılabilir |
+| **Web bildirimleri** | Siteler izin ister, kararın hatırlanır; bildirime tıklayınca sekmesi öne gelir |
+| **İndirilenler** | Bitmiş dosyayı listeden Finder’a, masaüstüne ya da bir siteye sürükle |
 
 ## voe mobil
 
@@ -147,13 +163,14 @@ voe açılışta ve 6 saatte bir bu deponun [son sürümüne](https://github.com
 | `⇧⌘F` | Odak modu | `⌥⌘U` | Sayfa kaynağı |
 | `⌥⌘R` | Okuma modu | `⇧⌘R` | Önbelleği atlayarak yenile |
 | `⇧⌘D` | Okuma listesine ekle | `⇧⌘2` / `⌥⇧⌘2` | Ekran görüntüsü / tam sayfa |
+| `⌥⌘A` | voe AI paneli | | |
 
 ## Veri ve telemetri
 
 - Telemetri yok: kullanım istatistiği, çökme raporu ya da reklam kimliği toplanmaz.
 - Veriler yalnızca cihazlarında durur. Senkron açıksa sunucuya yalnızca uçtan uca şifreli kayıtlar gider.
-- Yerel sunucu taraması, Araç Kutusu, JSON görüntüleyici ve QR kodları tamamen cihazda çalışır.
-- voe kendiliğinden yalnızca üç bağlantı kurar: Kalkan filtre listelerinin güncellenmesi, yer imlerinin site simgeleri ve güncelleme denetimi. Güncelleme denetimi GitHub’a gider, yalnızca sürüm bilgisini içerir ve kapatılabilir. Yeni sürüm varsa paketi de GitHub’dan iner.
+- Yerel sunucu taraması, Araç Kutusu, JSON görüntüleyici, QR kodları ve voe AI tamamen cihazda çalışır.
+- voe kendiliğinden yalnızca üç bağlantı kurar: Kalkan filtre listelerinin güncellenmesi, yer imlerinin site simgeleri ve güncelleme denetimi. Güncelleme denetimi GitHub’a gider, yalnızca sürüm bilgisini içerir ve kapatılabilir. Yeni sürüm varsa paketi de GitHub’dan iner. voe AI’yi kurarsan model dosyaları bir kez Hugging Face’ten iner; yazdıkların hiçbir yere gönderilmez.
 
 ## Geri bildirim
 
@@ -161,6 +178,6 @@ Hata mı buldun, bir fikrin mi var? [Yeni bir kayıt aç](https://github.com/dev
 
 ## Lisans
 
-voe ücretsizdir; kaynak kodu açık değildir. Ayrıntılar için [LICENSE](LICENSE) dosyasına bak. voe; [Electron](https://www.electronjs.org/) ve Chromium (MIT/BSD), [Ghostery adblocker](https://github.com/ghostery/adblocker) (MPL-2.0), [Mozilla Readability](https://github.com/mozilla/readability) (Apache-2.0), [electron-chrome-extensions](https://github.com/samuelmaddock/electron-browser-shell) (MIT), [adhan-js](https://github.com/batoulapps/adhan-js) (MIT), [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) (MIT) ve [Sora](https://github.com/sora-xor/sora-font) (OFL-1.1) gibi açık kaynak projelere dayanır; bu projelerin lisansları kendi koşullarıyla geçerlidir.
+voe ücretsizdir; kaynak kodu açık değildir. Ayrıntılar için [LICENSE](LICENSE) dosyasına bak. voe; [Electron](https://www.electronjs.org/) ve Chromium (MIT/BSD), [Ghostery adblocker](https://github.com/ghostery/adblocker) (MPL-2.0), [Mozilla Readability](https://github.com/mozilla/readability) (Apache-2.0), [electron-chrome-extensions](https://github.com/samuelmaddock/electron-browser-shell) (MIT), [adhan-js](https://github.com/batoulapps/adhan-js) (MIT), [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) (MIT), [WebLLM](https://github.com/mlc-ai/web-llm) (Apache-2.0) ve [Sora](https://github.com/sora-xor/sora-font) (OFL-1.1) gibi açık kaynak projelere dayanır; bu projelerin lisansları kendi koşullarıyla geçerlidir. voe AI modelleri ayrıca indirilir: [Qwen3](https://huggingface.co/Qwen/Qwen3-4B) (Apache-2.0), [Gemma 2](https://ai.google.dev/gemma/terms) (Gemma Kullanım Koşulları).
 
 <p align="center"><sub>© 2026 voe</sub></p>

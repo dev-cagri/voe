@@ -1,5 +1,16 @@
 # Sürüm notları
 
+## 0.3.0
+
+- **voe AI, bu Mac’te çalışan yapay zekâ (isteğe bağlı):** çeviri, özet, açıklama, yazım düzeltme ve sohbet. Model Mac’in GPU’sunda çalışır; yazdıkların hiçbir yere gönderilmez. Kurmadığın sürece hiçbir şey inmez. Yeni sekmedeki karttan ya da ✦ düğmesinden Qwen3 4B (önerilen, 2,3 GB) veya Gemma 2 2B (hafif, 1,5 GB) kurulur.
+- **Sağdan açılan voe AI paneli** (✦ düğmesi ya da `⌥⌘A`): sohbet, “Bu sayfayı özetle” ve ardından sayfa hakkında sorular, metin araçları, model ayarları.
+- **Seçili metinde sağ tık → voe AI:** Türkçeye/İngilizceye çevir, özetle, açıkla, yazımı düzelt. Sonuç seçimin yanında akar; düzenlenebilir alanlarda “Yerine yaz”.
+- **Yeni renk:** voe’nun tasarım dili artık siyaha yakışan yeşil.
+- **Adres çubuğunda seçim** artık açıkça görünüyor.
+- **Araç çubuğu:** voe AI düğmesi eklendi. Vakit düğmesi dinamik: uzaktayken yalnızca ikon, son bir saatte geri sayım, vakit girince vurgulu. İkisi de Ayarlar → Araç çubuğu’ndan kapatılabilir.
+- **Web bildirimleri çalışıyor:** siteler izin isteyebiliyor (önceden “açılamadı” diyordu), kararın hatırlanıyor, bildirime tıklayınca sekmesi öne geliyor. Sekme kapalıyken gelen (push) bildirimler henüz desteklenmiyor.
+- **İndirilenlerden sürükle-bırak:** bitmiş dosyayı listeden Finder’a, masaüstüne ya da bir siteye sürükle.
+
 ## 0.2.11
 
 - **Otomatik güncelleme:** Yeni sürüm artık arka planda iniyor. Paket GitHub’ın verdiği SHA-256 özetiyle, ardından macOS güncelleyicisinde geliştirici imzasıyla doğrulanıyor. voe’yu yeniden başlattığında (ya da kapatıp açtığında) kuruluyor, açık sekmelerin geri geliyor. .dmg indirip sürüklemeye gerek kalmadı.
