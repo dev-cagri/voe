@@ -130,7 +130,11 @@ iOS sürümü **TestFlight** beta aşamasında, Android sürümü hazırlanıyor
 
 ## Güncellemeler
 
-voe açılışta ve 6 saatte bir bu deponun [son sürümüne](https://github.com/dev-cagri/voe/releases/latest) bakar. İstek yalnızca uygulama sürümünü içerir. Yeni sürüm varsa ⋮ menüsünde haber verir; **İndir** dersen `.dmg` voe’nun kendi indirme yöneticisine düşer. Hiçbir şey kendiliğinden kurulmaz. Bu denetim **Ayarlar → Güncellemeler** bölümünden kapatılabilir.
+voe açılışta ve 6 saatte bir bu deponun [son sürümüne](https://github.com/dev-cagri/voe/releases/latest) bakar. İstek yalnızca uygulama sürümünü içerir.
+
+0.2.11’den itibaren güncellemeler kendiliğinden kurulur. Yeni sürümün `.zip` paketi arka planda iner. GitHub’ın verdiği SHA-256 özetiyle doğrulanır, ardından macOS güncelleyicisi aynı geliştirici imzasını taşıdığını denetler. voe’yu yeniden başlattığında (ya da kapatıp açtığında) kurulur ve açık sekmelerin geri gelir. voe disk görüntüsünden ya da yazılamayan bir klasörden çalışıyorsa eskisi gibi `.dmg` indirmeyi önerir.
+
+0.2.10 ve öncesinden geçerken bir kereliğine `.dmg` ile kurman gerekir. Otomatik indirme ve denetim **Ayarlar → Güncellemeler** bölümünden ayrı ayrı kapatılabilir.
 
 ## Klavye kısayolları
 
@@ -149,7 +153,7 @@ voe açılışta ve 6 saatte bir bu deponun [son sürümüne](https://github.com
 - Telemetri yok: kullanım istatistiği, çökme raporu ya da reklam kimliği toplanmaz.
 - Veriler yalnızca cihazlarında durur. Senkron açıksa sunucuya yalnızca uçtan uca şifreli kayıtlar gider.
 - Yerel sunucu taraması, Araç Kutusu, JSON görüntüleyici ve QR kodları tamamen cihazda çalışır.
-- voe kendiliğinden yalnızca üç bağlantı kurar: Kalkan filtre listelerinin güncellenmesi, yer imlerinin site simgeleri ve güncelleme denetimi. Güncelleme denetimi GitHub’a gider, yalnızca sürüm bilgisini içerir ve kapatılabilir.
+- voe kendiliğinden yalnızca üç bağlantı kurar: Kalkan filtre listelerinin güncellenmesi, yer imlerinin site simgeleri ve güncelleme denetimi. Güncelleme denetimi GitHub’a gider, yalnızca sürüm bilgisini içerir ve kapatılabilir. Yeni sürüm varsa paketi de GitHub’dan iner.
 
 ## Geri bildirim
 

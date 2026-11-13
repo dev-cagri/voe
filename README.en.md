@@ -130,7 +130,11 @@ The iOS app is in **TestFlight** beta, and Android is on the way. It shares the 
 
 ## Updates
 
-voe checks this repository’s [latest release](https://github.com/dev-cagri/voe/releases/latest) at launch and every 6 hours. The request carries only the app version. If a newer version exists, the ⋮ menu tells you; **İndir** (Download) saves the `.dmg` through voe’s own download manager. Nothing installs by itself. You can turn the check off in **Ayarlar → Güncellemeler** (Settings → Updates).
+voe checks this repository’s [latest release](https://github.com/dev-cagri/voe/releases/latest) at launch and every 6 hours. The request carries only the app version.
+
+Starting with 0.2.11, updates install themselves. The new version’s `.zip` package downloads in the background. It is checked against the SHA-256 digest GitHub publishes, and then the macOS updater confirms it carries the same developer signature. It installs when you restart voe (or quit and reopen it), and your open tabs come back. If voe runs from the disk image or a folder it can’t write to, it offers the `.dmg` download as before.
+
+Coming from 0.2.10 or earlier, install the `.dmg` once by hand. Automatic download and the check can each be turned off in **Ayarlar → Güncellemeler** (Settings → Updates).
 
 ## Keyboard shortcuts
 
@@ -149,7 +153,7 @@ voe checks this repository’s [latest release](https://github.com/dev-cagri/voe
 - No telemetry: no usage statistics, crash reports or advertising IDs.
 - Your data stays on your devices. With sync on, only end-to-end encrypted records reach the server.
 - The local-server scan, Toolbox, JSON viewer and QR codes run entirely on your device.
-- voe makes only three connections on its own: Shield filter-list updates, site icons for bookmarks, and the update check. The update check goes to GitHub, carries only the version and can be turned off.
+- voe makes only three connections on its own: Shield filter-list updates, site icons for bookmarks, and the update check. The update check goes to GitHub, carries only the version and can be turned off. When a new version exists, its package also downloads from GitHub.
 
 ## Feedback
 

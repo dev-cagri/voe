@@ -1,5 +1,12 @@
 # Sürüm notları
 
+## 0.2.11
+
+- **Otomatik güncelleme:** Yeni sürüm artık arka planda iniyor. Paket GitHub’ın verdiği SHA-256 özetiyle, ardından macOS güncelleyicisinde geliştirici imzasıyla doğrulanıyor. voe’yu yeniden başlattığında (ya da kapatıp açtığında) kuruluyor, açık sekmelerin geri geliyor. .dmg indirip sürüklemeye gerek kalmadı.
+- Ayarlar → Güncellemeler: indirme ilerlemesi, “Yeniden başlat” düğmesi ve “Güncellemeleri otomatik indir ve kur” anahtarı. ⋮ menüsü de güncellemenin durumunu gösteriyor.
+- voe disk görüntüsünden ya da yazılamayan bir klasörden çalışıyorsa nedenini söyleyip .dmg indirmeyi öneriyor.
+- Bu sürüme 0.2.10 ve öncesinden bir kereliğine .dmg ile geçmen gerekiyor; sonrası kendiliğinden.
+
 ## 0.2.10
 
 - **Düzeltme:** Geçersiz (kendinden imzalı) sertifikalı bir siteye “yine de devam et” ile girdikten sonra o site WebSocket bağlantısı açınca (ör. aaPanel'de terminal) voe çöküyordu. Artık çökmüyor; terminal ve benzeri canlı bağlantılar çalışıyor.
