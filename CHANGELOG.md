@@ -1,5 +1,15 @@
 # Sürüm notları
 
+## 0.3.2
+
+- **Excel dosyalarını düzenleme:** Tablo görüntüleyici artık bir düzenleyici. Hücreyi seçip yazmaya başla, `F2` ya da çift tıklamayla var olan değeri düzenle; `Enter`/`Tab` kaydedip ilerler, `Esc` vazgeçer. Formül çubuğu da düzenlenebilir.
+- **Formüller:** `=` ile başla; Türkçe Excel’deki gibi `=TOPLA(B2:B9)`, `=EĞER(A1>5; "büyük"; "küçük")`, `=DÜŞEYARA(…)` yazabilirsin, dosyaya Excel’in anladığı biçimde kaydedilir. Formül yazarken bir hücreye tıklamak ya da sürüklemek başvuruyu ekler. Bir hücre değişince ona bağlı formüller (başka sayfadakiler dahil) anında yeniden hesaplanır. 80’e yakın yaygın işlev hesaplanıyor; voe’nun hesaplayamadığı formüller dosyadaki değeriyle soluk gösterilir ve Excel açılışta yeniden hesaplar.
+- **Türkçe girişler:** `1.250,5` sayı, `14.11.2026` tarih, `%15` yüzde, `DOĞRU`/`YANLIŞ` mantıksal olarak tanınır. Başına `'` koyarsan metin kalır.
+- **Geri al / yinele** (`⌘Z`, `⇧⌘Z` ve araç çubuğundaki düğmeler), **Delete** ile silme, **kes/kopyala/yapıştır**: Excel’den kopyalanan aralıklar hücrelere dağılır; voe içinde kopyalanan formüllerin başvuruları Excel’deki gibi kayar.
+- **Kaydetme (`⌘S`):** xlsx/xlsm dosyalarında yalnızca değişen hücreler yazılır; biçimler, tablolar, grafikler, yorumlar, makrolar olduğu gibi kalır. Bir dosyanın üzerine ilk kez yazılmadan önce özgün hali yedeklenir (voe’nun “Tablo Yedekleri” klasörü, son 30 dosya). CSV dosyaları kendi ayırıcısı (`;`) ve kodlamasıyla (Windows-1254 ya da UTF-8) kaydedilir. xls, ODS ve Numbers dosyaları “Farklı Kaydet” ile .xlsx olarak kaydedilir (`⇧⌘S`).
+- **Değişiklik koruması:** Kaydedilmemiş değişiklik varken sekmeyi, pencereyi ya da voe’yu kapatırken “Kaydet / Vazgeç / Kaydetme” diye soruluyor. Dosya sen açtıktan sonra başka bir uygulamada değiştiyse üzerine yazmadan önce uyarıyor.
+- Sitelerin “sayfadan ayrılmak istiyor musun?” uyarıları da artık soruluyor (önceden yenileme sessizce iptal oluyordu).
+
 ## 0.3.1
 
 - **Dosya açma:** Finder’dan bir dosyayı sekme çubuğuna ya da yeni sekmeye sürükle, `⌘O` ile seç, Dock’taki voe’ya bırak ya da Finder’da “Birlikte Aç → voe” de. Her dosya kendi sekmesinde açılır.

@@ -120,7 +120,8 @@ voe AI **isteğe bağlıdır**. Kurmadığın sürece hiçbir şey indirilmez. K
 | **Vakit** | Sıradaki ezan vakti, hicri tarih ve zikirmatik (cihazda hesaplanır). Düğme dinamiktir: vakte bir saat kalınca geri sayım başlar. Ayarlar’dan kapatılabilir |
 | **Web bildirimleri** | Siteler izin ister, kararın hatırlanır; bildirime tıklayınca sekmesi öne gelir |
 | **İndirilenler** | Bitmiş dosyayı listeden Finder’a, masaüstüne ya da bir siteye sürükle |
-| **Dosya açma** | Finder’dan sekme çubuğuna sürükle, `⌘O` ya da “Birlikte Aç → voe”: PDF görüntüleyici; Excel (xlsx, xls), ODS, CSV ve Numbers için tablo görüntüleyici (sayfa sekmeleri, formül çubuğu, arama, kopyalama, CSV’ye aktarma) |
+| **Dosya açma** | Finder’dan sekme çubuğuna sürükle, `⌘O` ya da “Birlikte Aç → voe”: PDF görüntüleyici; Excel (xlsx, xls), ODS, CSV ve Numbers için tablo düzenleyici |
+| **Tablo düzenleme** | Hücreye yaz, formül gir (Türkçe de olur: `=TOPLA(B2:B9)`, `=EĞER(…; …; …)`), formül yazarken hücreye tıklayarak başvuru ekle; değişen hücreye bağlı formüller anında yeniden hesaplanır. Geri al/yinele, kes/kopyala/yapıştır (Excel’den de), `⌘S` ile kaydet. xlsx’te yalnızca değişen hücreler yazılır: biçimler, tablolar, grafikler, makrolar korunur; ilk kayıttan önce özgün dosya yedeklenir. CSV kendi ayırıcısı ve kodlamasıyla kaydedilir; xls/ODS/Numbers .xlsx olarak kaydedilir |
 
 ## voe mobil
 

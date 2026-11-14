@@ -120,7 +120,8 @@ voe AI is **optional**. Nothing is downloaded unless you install it. You can ins
 | **Vakit** | Next prayer time, Hijri date and a tasbih counter (computed on device). The button is dynamic: the countdown starts an hour before. Can be turned off in Settings |
 | **Web notifications** | Sites ask for permission and your choice is remembered; clicking a notification brings its tab forward |
 | **Downloads** | Drag a finished file from the list to Finder, the desktop or a website |
-| **Open files** | Drag from Finder onto the tab strip, press `⌘O` or use “Open With → voe”: PDF viewer; a spreadsheet viewer for Excel (xlsx, xls), ODS, CSV and Numbers (sheet tabs, formula bar, search, copy, export to CSV) |
+| **Open files** | Drag from Finder onto the tab strip, press `⌘O` or use “Open With → voe”: PDF viewer; a spreadsheet editor for Excel (xlsx, xls), ODS, CSV and Numbers |
+| **Spreadsheet editing** | Type into cells, enter formulas (English or Turkish function names, e.g. `=SUM(B2:B9)` / `=TOPLA(B2:B9)`), click cells while typing a formula to insert references; dependent formulas recalculate instantly. Undo/redo, cut/copy/paste (also from Excel), save with `⌘S`. For xlsx only the changed cells are written, so formatting, tables, charts and macros are kept, and the original file is backed up before the first save. CSV keeps its delimiter and encoding; xls/ODS/Numbers are saved as .xlsx |
 
 ## voe mobile
 
