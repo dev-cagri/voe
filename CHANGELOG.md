@@ -1,5 +1,9 @@
 # Sürüm notları
 
+## 0.3.4
+
+- **Düzeltme:** YouTube gibi sitelerde videoyu tam ekrana alıp `Esc`'ye basınca pencere tam ekrandan çıkıyor ama video tam ekranda kaldığını sanıyordu (oynatıcı pencereyi kaplamaya devam ediyor, ikinci `Esc` işe yaramıyordu). Artık `Esc`, sitenin kendi düğmesi ya da `⌃⌘F` ile çıkınca video da pencere de normale dönüyor. Pencere zaten tam ekrandaysa `Esc` yalnızca videoyu küçültür.
+
 ## 0.3.3
 
 - **Düzeltme:** İndirme sürerken “Son indirilenler” kartı her ilerlemede kapanıp açılıyormuş gibi yanıp sönüyordu. Artık kart sabit kalıyor, yalnızca ilerleme çubuğu ve kalan süre güncelleniyor (çubuk akıcı ilerliyor, liste kaydırması da yerinde kalıyor).
