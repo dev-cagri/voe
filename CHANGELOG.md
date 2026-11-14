@@ -1,5 +1,10 @@
 # Sürüm notları
 
+## 0.3.3
+
+- **Düzeltme:** İndirme sürerken “Son indirilenler” kartı her ilerlemede kapanıp açılıyormuş gibi yanıp sönüyordu. Artık kart sabit kalıyor, yalnızca ilerleme çubuğu ve kalan süre güncelleniyor (çubuk akıcı ilerliyor, liste kaydırması da yerinde kalıyor).
+- Tablo düzenleyicide bir hücreyi düzenlerken “Kaydet” düğmesi de kullanılabiliyor.
+
 ## 0.3.2
 
 - **Excel dosyalarını düzenleme:** Tablo görüntüleyici artık bir düzenleyici. Hücreyi seçip yazmaya başla, `F2` ya da çift tıklamayla var olan değeri düzenle; `Enter`/`Tab` kaydedip ilerler, `Esc` vazgeçer. Formül çubuğu da düzenlenebilir.
