@@ -1,5 +1,16 @@
 # Sürüm notları
 
+## 0.4.0
+
+- **Notlar ve vurgular:** Bir sayfada metni seç → sağ tık → “Vurgula” (`⇧⌘H`) ya da “Vurgula ve Not Ekle…”. Vurguya tıklayınca not kartı açılır: not yazdıkça kaydedilir, dört renkten biri seçilir, vurgu kaldırılabilir. Sayfayı yeniden açtığında vurgular yerinde olur. Sayfanın yapısına dokunulmaz; sonradan yüklenen içerikte de çalışır.
+  - Tüm vurgular ve notlar yeni **Notlar** sayfasında (`voe://notes`, ⋮ menüsü → Notlar ve Vurgular). Sayfaya göre gruplanır, aranır, düzenlenir; Markdown olarak dışa aktarılır. Bir nota tıklayınca sayfa açılır ve o satıra gider.
+  - Yeni sekmeye **Notlarım** kartı eklenebilir.
+  - Notlar diskte şifreli tutulur. Gizli pencerede vurgu yapılmaz.
+- **Site verilerini temizle:** Bir site düzgün çalışmıyorsa (giriş yapılamıyor, sayfa takılıyor) yalnızca o sitenin çerezlerini, yerel depolamasını, önbelleğini ve service worker’larını sil. Alt alan adları da dahil (ör. www. ve m.). Adres çubuğundaki kilitten ya da ⋮ menüsünden yapılır; önce sorulur. Diğer sitelere, geçmişe ve şifrelere dokunulmaz.
+  - Ayarlar’da yeni **Çerezler ve site verileri** bölümü: hangi sitenin kaç çerez bıraktığını gör, ara, tek tek ya da tümünü sil.
+- Tablo düzenleyicide adres çubuğunda anlamsız dosya anahtarı yerine dosyanın adı görünür.
+- **Düzeltme:** Açılır kartların (indirilenler, yer imi, not…) gölgesi açık renkli sayfalarda kenarları kesik gri bir kutu gibi görünüyordu.
+
 ## 0.3.4
 
 - **Düzeltme:** YouTube gibi sitelerde videoyu tam ekrana alıp `Esc`'ye basınca pencere tam ekrandan çıkıyor ama video tam ekranda kaldığını sanıyordu (oynatıcı pencereyi kaplamaya devam ediyor, ikinci `Esc` işe yaramıyordu). Artık `Esc`, sitenin kendi düğmesi ya da `⌃⌘F` ile çıkınca video da pencere de normale dönüyor. Pencere zaten tam ekrandaysa `Esc` yalnızca videoyu küçültür.

@@ -86,6 +86,23 @@ Yer imleri (klasörleriyle), şifreler, geçmiş, açık sekmeler, okuma listesi
 
 Her kayıt cihazda **AES-256-GCM** ile şifrelenir. Sunucu yalnızca anlamsız şifreli blokları görür: URL, başlık ya da şifre göremez. Anahtar yalnızca senin cihazlarında durur. Kaybolan bir cihazın erişimini **Senkronu sıfırla** ile tek adımda kesebilirsin.
 
+## Dosyalar ve notlar
+
+<p align="center">
+  <img src=".github/assets/sheet-editor.png" alt="voe’da açık bir Excel dosyası: Ortalama satırında =ORTALAMA( yazılırken Toplam sütunundaki F2:F13 aralığı fareyle seçilmiş; üstte “Kaydedilmedi” rozeti ve Kaydet düğmesi" width="100%">
+</p>
+
+- **Excel’i aç, düzenle, kaydet.** xlsx, xls, ODS, CSV ve Numbers dosyalarını sekme çubuğuna bırak ya da `⌘O` ile seç. Hücreye yazmaya başla, formülleri Türkçe gir (`=TOPLA`, `=EĞER`, `=DÜŞEYARA`). Formül yazarken hücreye tıklamak ya da sürüklemek başvuruyu ekler.
+- **Biçimler bozulmaz.** `⌘S` ile kaydedince xlsx’te yalnızca değişen hücreler yazılır. Biçimler, tablolar, grafikler ve makrolar olduğu gibi kalır; ilk kayıttan önce özgün dosya yedeklenir.
+
+<p align="center">
+  <img src=".github/assets/notes-highlights.png" alt="Bir makalede sarı, yeşil ve mavi vurgular; yeşil vurgunun altında açılan not kartında bir not ve renk seçenekleri" width="100%">
+</p>
+
+- **Vurgula, not ekle.** Bir sayfada metni seç, sağ tıkla → **Vurgula** (`⇧⌘H`). Vurguya tıklayınca not kartı açılır; yazdığın not kendiliğinden kaydedilir. Dört renk var.
+- **Döndüğünde yerinde.** Sayfayı yeniden açtığında vurgular yerinde olur. Sayfanın yapısına dokunulmaz; sonradan yüklenen içerikte de çalışır.
+- **Hepsi tek yerde.** Tüm notların `voe://notes` sayfasında ve yeni sekmedeki **Notlarım** kartında. Bir nota tıklayınca sayfa açılır ve o satıra gider. Notlar Markdown olarak dışa aktarılır ve diskte şifreli tutulur. Gizli pencerede vurgu yapılmaz.
+
 ## voe AI: bu Mac’te çalışan yapay zekâ
 
 <p align="center">
@@ -120,6 +137,8 @@ voe AI **isteğe bağlıdır**. Kurmadığın sürece hiçbir şey indirilmez. K
 | **Vakit** | Sıradaki ezan vakti, hicri tarih ve zikirmatik (cihazda hesaplanır). Düğme dinamiktir: vakte bir saat kalınca geri sayım başlar. Ayarlar’dan kapatılabilir |
 | **Web bildirimleri** | Siteler izin ister, kararın hatırlanır; bildirime tıklayınca sekmesi öne gelir |
 | **İndirilenler** | Bitmiş dosyayı listeden Finder’a, masaüstüne ya da bir siteye sürükle |
+| **Notlar ve vurgular** | Metni seç → sağ tık → Vurgula (`⇧⌘H`); vurguya tıklayıp not ekle. Tümü `voe://notes`’ta ve yeni sekmedeki “Notlarım” kartında; Markdown olarak dışa aktarılır |
+| **Site verilerini temizle** | Bir site düzgün çalışmıyorsa adres çubuğundaki kilitten ya da ⋮ menüsünden yalnızca o sitenin (alt alan adları dahil) çerezlerini, depolamasını ve önbelleğini sil. Ayarlar’da sitelere göre çerez listesi |
 | **Dosya açma** | Finder’dan sekme çubuğuna sürükle, `⌘O` ya da “Birlikte Aç → voe”: PDF görüntüleyici; Excel (xlsx, xls), ODS, CSV ve Numbers için tablo düzenleyici |
 | **Tablo düzenleme** | Hücreye yaz, formül gir (Türkçe de olur: `=TOPLA(B2:B9)`, `=EĞER(…; …; …)`), formül yazarken hücreye tıklayarak başvuru ekle; değişen hücreye bağlı formüller anında yeniden hesaplanır. Geri al/yinele, kes/kopyala/yapıştır (Excel’den de), `⌘S` ile kaydet. xlsx’te yalnızca değişen hücreler yazılır: biçimler, tablolar, grafikler, makrolar korunur; ilk kayıttan önce özgün dosya yedeklenir. CSV kendi ayırıcısı ve kodlamasıyla kaydedilir; xls/ODS/Numbers .xlsx olarak kaydedilir |
 
@@ -166,6 +185,7 @@ voe açılışta ve 6 saatte bir bu deponun [son sürümüne](https://github.com
 | `⌥⌘R` | Okuma modu | `⇧⌘R` | Önbelleği atlayarak yenile |
 | `⇧⌘D` | Okuma listesine ekle | `⇧⌘2` / `⌥⇧⌘2` | Ekran görüntüsü / tam sayfa |
 | `⌥⌘A` | voe AI paneli | `⌘O` | Dosya aç (PDF, Excel, CSV…) |
+| `⇧⌘H` | Seçili metni vurgula | | |
 
 ## Veri ve telemetri
 

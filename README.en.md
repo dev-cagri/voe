@@ -86,6 +86,23 @@ Bookmarks (with folders), passwords, history, open tabs, the reading list and se
 
 Every record is encrypted on the device with **AES-256-GCM**. The server only sees meaningless encrypted blobs and can’t read URLs, titles or passwords. The key exists only on your devices. **Reset sync** cuts off a lost device in one step.
 
+## Files and notes
+
+<p align="center">
+  <img src=".github/assets/sheet-editor.png" alt="An Excel file open in voe: while typing =ORTALAMA( (AVERAGE) in the Average row, the range F2:F13 of the Total column is selected with the mouse; an “Unsaved” badge and the Save button at the top" width="100%">
+</p>
+
+- **Open, edit and save Excel files.** Drop xlsx, xls, ODS, CSV or Numbers files on the tab strip or pick them with `⌘O`. Start typing in a cell and enter formulas in English or Turkish (`=SUM` / `=TOPLA`, `=IF` / `=EĞER`). While typing a formula, clicking or dragging over cells inserts the reference.
+- **Formatting stays intact.** When you save with `⌘S`, only the changed cells are written to xlsx. Formatting, tables, charts and macros are kept as they are, and the original file is backed up before the first save.
+
+<p align="center">
+  <img src=".github/assets/notes-highlights.png" alt="Yellow, green and blue highlights in an article; the note card under the green highlight shows a note and the color options" width="100%">
+</p>
+
+- **Highlight and take notes.** Select text on a page, right-click → **Highlight** (`⇧⌘H`). Click a highlight to open its note card; what you type is saved automatically. Four colors.
+- **Still there when you come back.** Highlights reappear when you reopen the page. The page’s markup is never changed, and it works with content that loads later.
+- **All in one place.** All your notes are on `voe://notes` and in the **My notes** card on the new tab. Click a note to open the page at that line. Export as Markdown; stored encrypted on disk. Nothing is highlighted in private windows.
+
 ## voe AI: AI that runs on this Mac
 
 <p align="center">
@@ -120,6 +137,8 @@ voe AI is **optional**. Nothing is downloaded unless you install it. You can ins
 | **Vakit** | Next prayer time, Hijri date and a tasbih counter (computed on device). The button is dynamic: the countdown starts an hour before. Can be turned off in Settings |
 | **Web notifications** | Sites ask for permission and your choice is remembered; clicking a notification brings its tab forward |
 | **Downloads** | Drag a finished file from the list to Finder, the desktop or a website |
+| **Notes and highlights** | Select text → right-click → Highlight (`⇧⌘H`); click a highlight to add a note. All of them on `voe://notes` and in the “My notes” card on the new tab; export as Markdown |
+| **Clear site data** | If a site misbehaves, clear only that site’s cookies, storage and cache (subdomains included) from the lock in the address bar or the ⋮ menu. Per-site cookie list in Settings |
 | **Open files** | Drag from Finder onto the tab strip, press `⌘O` or use “Open With → voe”: PDF viewer; a spreadsheet editor for Excel (xlsx, xls), ODS, CSV and Numbers |
 | **Spreadsheet editing** | Type into cells, enter formulas (English or Turkish function names, e.g. `=SUM(B2:B9)` / `=TOPLA(B2:B9)`), click cells while typing a formula to insert references; dependent formulas recalculate instantly. Undo/redo, cut/copy/paste (also from Excel), save with `⌘S`. For xlsx only the changed cells are written, so formatting, tables, charts and macros are kept, and the original file is backed up before the first save. CSV keeps its delimiter and encoding; xls/ODS/Numbers are saved as .xlsx |
 
@@ -166,6 +185,7 @@ Coming from 0.2.10 or earlier, install the `.dmg` once by hand. Automatic downlo
 | `⌥⌘R` | Reader mode | `⇧⌘R` | Reload ignoring cache |
 | `⇧⌘D` | Add to reading list | `⇧⌘2` / `⌥⇧⌘2` | Screenshot / full page |
 | `⌥⌘A` | voe AI panel | `⌘O` | Open a file (PDF, Excel, CSV…) |
+| `⇧⌘H` | Highlight the selected text | | |
 
 ## Data and telemetry
 
