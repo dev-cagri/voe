@@ -1,5 +1,10 @@
 # Sürüm notları
 
+## 0.5.3
+
+- **Düzeltme (Facebook girişi):** voe Kalkanı açıkken Facebook’a giriş yapılamıyordu. İki neden vardı: Kalkan Facebook’un kendi isteklerini engelliyordu, filtre betikleri de birbiriyle çakışıp (“JSONPath zaten tanımlı”) yarım çalışıyordu. Artık giriş yapılan büyük sitelerde (Facebook, Instagram, WhatsApp, Google hesapları, Apple, Microsoft, X, LinkedIn, GitHub, e-Devlet, Steam) sitenin kendi istekleri engellenmez; üçüncü taraf reklam ve izleyiciler engellenmeye devam eder. Filtre betikleri her sitede kendi kapsamında çalışır (YouTube’daki aynı hata da giderildi).
+- **Düzeltme:** ⋮ menüsü, pencere ekranın sağ kenarına yakınken düğmeden uzakta, sola kaymış açılıyordu. Menü genişliği artık ölçülüyor; menü düğmenin hemen altında, sağa hizalı açılır.
+
 ## 0.5.2
 
 - **Sağ tık menüsünde ikonlar:** Sayfa, bağlantı, resim, metin kutusu ve seçili metin menülerindeki her öğenin (voe AI alt menüsü dahil) ikonu var; ⋮ menüsüyle aynı çizgide, açık ve koyu menüye uyar.
