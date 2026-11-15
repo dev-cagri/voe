@@ -150,6 +150,8 @@ voe AI is **optional**. Nothing is downloaded unless you install it. You can ins
 | **Web notifications** | Sites ask for permission and your choice is remembered; clicking a notification brings its tab forward |
 | **Downloads** | Drag a finished file from the list to Finder, the desktop or a website |
 | **WhatsApp** | The WhatsApp button in the toolbar opens WhatsApp Web in a side panel next to the page. It keeps running in the background when the panel is closed: notifications arrive and the unread count shows on the button and in the Dock. Links in chats open in a new tab |
+| **Media controls** | When music or video plays in a tab, a toolbar button appears: media from all tabs with artwork, title and a progress bar; play/pause, previous/next track, 10 s back/forward, mute, go to tab. Switching tabs moves a playing video into picture-in-picture automatically |
+| **Customizable toolbar** | Hide any button in Settings › Toolbar or by right-clicking it › “Hide” |
 | **Page translation** | Translate pages into Turkish in one click; on device and fast. Right-click, the ⋮ menu or the button in the address bar; “always translate” option |
 | **Notes and highlights** | Select text → right-click → Highlight (`⇧⌘H`); click a highlight to add a note. All of them on `voe://notes` and in the “My notes” card on the new tab; export as Markdown |
 | **Clear site data** | If a site misbehaves, clear only that site’s cookies, storage and cache (subdomains included) from the lock in the address bar or the ⋮ menu. Per-site cookie list in Settings |

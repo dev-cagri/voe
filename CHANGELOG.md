@@ -1,5 +1,14 @@
 # Sürüm notları
 
+## 0.7.0
+
+- **Medya kontrolü:** Bir sekmede müzik ya da video çalınca araç çubuğunda medya düğmesi belirir. Kartta tüm sekmelerdeki medya kapak, başlık, sanatçı ve ilerleme çubuğuyla listelenir.
+  - Oynat/duraklat, önceki/sonraki parça, 10 saniye geri/ileri, çubuğa tıklayarak atlama, sekmeyi sessize alma, resim içinde resim; başlığa tıklayınca o sekmeye geçer.
+  - Kendi medya düğmelerini tanımlayan sitelerde (ör. YouTube) onlar kullanılır; sonraki parça sitenin sırasına göre gelir.
+  - Komut paletinden de: “Duraklat: <şarkı>”, “Sonraki parça”, “Medya kontrolü”.
+- **Sekme değişince küçük pencere:** Sesli oynayan bir videonun sekmesinden başka sekmeye geçince video kendiliğinden resim içinde resme geçer; sekmeye dönünce kapanır. Ayarlar › Araç çubuğu › Medya’dan kapatılabilir.
+- **Araç çubuğunu özelleştir:** Araç çubuğundaki her düğme (Geliştirici paneli, voe Kalkanı, Ezan vakti, voe AI, WhatsApp, Medya, İndirilenler) Ayarlar › Araç çubuğu’nda tek listede açılıp kapatılır. Düğmeye sağ tıklayıp “gizle” de denebilir. Gizlenen düğmelerin özellikleri ⋮ menüsünden ve komut paletinden kullanılmaya devam eder.
+
 ## 0.6.2
 
 - **Düzeltme (Google girişi):** Google hesabına giriş “Oturumunuz açılamadı – Bu tarayıcı veya uygulama güvenli olmayabilir” hatasıyla reddediliyordu. Google, Chrome, Edge ve Brave gibi Chromium tabanlı tarayıcıların her sayfada sunduğu `chrome.app`, `chrome.csi` ve `chrome.loadTimes` nesnelerini arıyor; voe’da bunlar yoktu. Artık var. Sitelerdeki “Google ile giriş yap” açılır pencerelerinde de geçerli.
