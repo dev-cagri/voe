@@ -1,5 +1,14 @@
 # Sürüm notları
 
+## 0.5.0
+
+- **Sayfa çevirisi:** Türkçe olmayan sayfaları tek tıkla Türkçeye çevir. Adres çubuğundaki çeviri düğmesi, sağ tık → “Türkçeye Çevir”, ⋮ menüsü ya da komut paleti. Önce ekranda gördüğün kısım çevrilir; sayfa birkaç saniyede tamamen Türkçe olur (sıcak motorda ekrandaki metin bir saniyeden kısa sürede).
+  - **Cihazda ve hızlı:** büyük bir yapay zekâ modeli yerine çeviriye özel küçük sinirsel modeller (bergamot-translator; Mozilla’nın Firefox çevirisi modelleri, MPL-2.0). Sayfa metni hiçbir yere gönderilmez. İlk kullanımda dil başına 15–40 MB model bir kez iner ve doğrulanır.
+  - İngilizceden doğrudan; Almanca, Fransızca, İspanyolca, İtalyanca, Portekizce, Felemenkçe, Lehçe, Rusça, Ukraynaca, Arapça, Farsça, Japonca, Çince, Korece ve diğer dillerden İngilizce üzerinden. Sayfanın dili kendiliğinden tespit edilir.
+  - Bağlantılar, düğmeler ve biçimler yerinde kalır; kod blokları ve `translate="no"` alanlar çevrilmez. Sonradan yüklenen içerik (React gibi uygulamalarda sayfa değişince) de çevrilir. “Orijinali göster” sayfayı birebir eski haline getirir.
+  - “… sayfaları her zaman çevir” seçeneği; Ayarlar’da yeni **Sayfa çevirisi** bölümü (her zaman çevrilen diller, indirilen modeller).
+- Seçili metin çevirisi (sağ tık → voe AI) değişmedi; o, cihazdaki voe AI ile çalışmaya devam ediyor.
+
 ## 0.4.0
 
 - **Notlar ve vurgular:** Bir sayfada metni seç → sağ tık → “Vurgula” (`⇧⌘H`) ya da “Vurgula ve Not Ekle…”. Vurguya tıklayınca not kartı açılır: not yazdıkça kaydedilir, dört renkten biri seçilir, vurgu kaldırılabilir. Sayfayı yeniden açtığında vurgular yerinde olur. Sayfanın yapısına dokunulmaz; sonradan yüklenen içerikte de çalışır.

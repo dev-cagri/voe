@@ -86,6 +86,18 @@ Bookmarks (with folders), passwords, history, open tabs, the reading list and se
 
 Every record is encrypted on the device with **AES-256-GCM**. The server only sees meaningless encrypted blobs and can’t read URLs, titles or passwords. The key exists only on your devices. **Reset sync** cuts off a lost device in one step.
 
+## Page translation: fast and on device
+
+<p align="center">
+  <img src=".github/assets/page-translate.png" alt="An English article translated into Turkish in voe; the card opened from the translate button in the address bar shows “Translated into Turkish” and “Show original”" width="100%">
+</p>
+
+- **One click.** On a page that isn’t in Turkish, press the translate button in the address bar or right-click → **Translate to Turkish**. What you see on screen is translated first; the whole page is Turkish within seconds.
+- **Fast.** Instead of a large AI model, it uses small neural models built for translation: hundreds of words per second.
+- **On this Mac.** Translation runs on the device and the page text is never sent anywhere. The first time, a 15–40 MB model per language downloads once. The models are the ones Mozilla publishes for Firefox translation (MPL-2.0). English is translated directly; German, French, Spanish, Russian, Arabic, Japanese and 20+ other languages go through English.
+- **The page keeps working.** Links, buttons and formatting stay in place; code blocks are not translated. Content that loads later is translated too. **Show original** brings everything back.
+- **Always translate.** Tick the box in the translate card and pages in that language are translated automatically. Managed in Settings › Page translation.
+
 ## Files and notes
 
 <p align="center">
@@ -137,6 +149,7 @@ voe AI is **optional**. Nothing is downloaded unless you install it. You can ins
 | **Vakit** | Next prayer time, Hijri date and a tasbih counter (computed on device). The button is dynamic: the countdown starts an hour before. Can be turned off in Settings |
 | **Web notifications** | Sites ask for permission and your choice is remembered; clicking a notification brings its tab forward |
 | **Downloads** | Drag a finished file from the list to Finder, the desktop or a website |
+| **Page translation** | Translate pages into Turkish in one click; on device and fast. Right-click, the ⋮ menu or the button in the address bar; “always translate” option |
 | **Notes and highlights** | Select text → right-click → Highlight (`⇧⌘H`); click a highlight to add a note. All of them on `voe://notes` and in the “My notes” card on the new tab; export as Markdown |
 | **Clear site data** | If a site misbehaves, clear only that site’s cookies, storage and cache (subdomains included) from the lock in the address bar or the ⋮ menu. Per-site cookie list in Settings |
 | **Open files** | Drag from Finder onto the tab strip, press `⌘O` or use “Open With → voe”: PDF viewer; a spreadsheet editor for Excel (xlsx, xls), ODS, CSV and Numbers |
@@ -192,7 +205,7 @@ Coming from 0.2.10 or earlier, install the `.dmg` once by hand. Automatic downlo
 - No telemetry: no usage statistics, crash reports or advertising IDs.
 - Your data stays on your devices. With sync on, only end-to-end encrypted records reach the server.
 - The local-server scan, Toolbox, JSON viewer, QR codes and voe AI run entirely on your device.
-- voe makes only three connections on its own: Shield filter-list updates, site icons for bookmarks, and the update check. The update check goes to GitHub, carries only the version and can be turned off. When a new version exists, its package also downloads from GitHub. If you install voe AI, the model files download once from Hugging Face; nothing you type is sent anywhere.
+- voe makes only three connections on its own: Shield filter-list updates, site icons for bookmarks, and the update check. The update check goes to GitHub, carries only the version and can be turned off. When a new version exists, its package also downloads from GitHub. If you install voe AI, the model files download once from Hugging Face; nothing you type is sent anywhere. When you translate a page, that language’s translation model downloads once from Mozilla’s public model storage; the page text is never sent.
 
 ## Feedback
 

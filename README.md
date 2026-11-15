@@ -86,6 +86,18 @@ Yer imleri (klasörleriyle), şifreler, geçmiş, açık sekmeler, okuma listesi
 
 Her kayıt cihazda **AES-256-GCM** ile şifrelenir. Sunucu yalnızca anlamsız şifreli blokları görür: URL, başlık ya da şifre göremez. Anahtar yalnızca senin cihazlarında durur. Kaybolan bir cihazın erişimini **Senkronu sıfırla** ile tek adımda kesebilirsin.
 
+## Sayfa çevirisi: hızlı ve cihazda
+
+<p align="center">
+  <img src=".github/assets/page-translate.png" alt="İngilizce bir makale voe’da Türkçeye çevrilmiş; adres çubuğundaki çeviri düğmesinden açılan kartta “Türkçeye çevrildi” ve “Orijinali göster”" width="100%">
+</p>
+
+- **Tek tık.** Türkçe olmayan bir sayfada adres çubuğundaki çeviri düğmesine bas ya da sağ tıkla → **Türkçeye Çevir**. Önce ekranda gördüğün kısım çevrilir; sayfa birkaç saniyede tamamen Türkçe olur.
+- **Hızlı.** Bu iş için büyük bir yapay zekâ modeli değil, çeviriye özel küçük sinirsel modeller kullanılır: saniyede yüzlerce kelime çevrilir.
+- **Bu Mac’te.** Çeviri cihazda yapılır, sayfa metni hiçbir yere gönderilmez. İlk kullanımda dil başına 15–40 MB model bir kez iner. Modeller Mozilla’nın Firefox çevirisi için yayımladığı modellerdir (MPL-2.0). İngilizceden doğrudan, Almanca, Fransızca, İspanyolca, Rusça, Arapça, Japonca ve 20’den fazla başka dilden İngilizce üzerinden çevrilir.
+- **Sayfa bozulmaz.** Bağlantılar, düğmeler ve biçimler yerinde kalır; kod blokları çevrilmez. Sonradan yüklenen içerik de çevrilir. **Orijinali göster** her şeyi geri getirir.
+- **Her zaman çevir.** Çeviri kartındaki kutuyu işaretlersen o dildeki sayfalar kendiliğinden çevrilir. Ayarlar › Sayfa çevirisi’nden yönetilir.
+
 ## Dosyalar ve notlar
 
 <p align="center">
@@ -137,6 +149,7 @@ voe AI **isteğe bağlıdır**. Kurmadığın sürece hiçbir şey indirilmez. K
 | **Vakit** | Sıradaki ezan vakti, hicri tarih ve zikirmatik (cihazda hesaplanır). Düğme dinamiktir: vakte bir saat kalınca geri sayım başlar. Ayarlar’dan kapatılabilir |
 | **Web bildirimleri** | Siteler izin ister, kararın hatırlanır; bildirime tıklayınca sekmesi öne gelir |
 | **İndirilenler** | Bitmiş dosyayı listeden Finder’a, masaüstüne ya da bir siteye sürükle |
+| **Sayfa çevirisi** | Türkçe olmayan sayfaları tek tıkla Türkçeye çevir; cihazda, hızlı. Sağ tık, ⋮ menüsü ya da adres çubuğundaki düğme; “her zaman çevir” seçeneği |
 | **Notlar ve vurgular** | Metni seç → sağ tık → Vurgula (`⇧⌘H`); vurguya tıklayıp not ekle. Tümü `voe://notes`’ta ve yeni sekmedeki “Notlarım” kartında; Markdown olarak dışa aktarılır |
 | **Site verilerini temizle** | Bir site düzgün çalışmıyorsa adres çubuğundaki kilitten ya da ⋮ menüsünden yalnızca o sitenin (alt alan adları dahil) çerezlerini, depolamasını ve önbelleğini sil. Ayarlar’da sitelere göre çerez listesi |
 | **Dosya açma** | Finder’dan sekme çubuğuna sürükle, `⌘O` ya da “Birlikte Aç → voe”: PDF görüntüleyici; Excel (xlsx, xls), ODS, CSV ve Numbers için tablo düzenleyici |
@@ -192,7 +205,7 @@ voe açılışta ve 6 saatte bir bu deponun [son sürümüne](https://github.com
 - Telemetri yok: kullanım istatistiği, çökme raporu ya da reklam kimliği toplanmaz.
 - Veriler yalnızca cihazlarında durur. Senkron açıksa sunucuya yalnızca uçtan uca şifreli kayıtlar gider.
 - Yerel sunucu taraması, Araç Kutusu, JSON görüntüleyici, QR kodları ve voe AI tamamen cihazda çalışır.
-- voe kendiliğinden yalnızca üç bağlantı kurar: Kalkan filtre listelerinin güncellenmesi, yer imlerinin site simgeleri ve güncelleme denetimi. Güncelleme denetimi GitHub’a gider, yalnızca sürüm bilgisini içerir ve kapatılabilir. Yeni sürüm varsa paketi de GitHub’dan iner. voe AI’yi kurarsan model dosyaları bir kez Hugging Face’ten iner; yazdıkların hiçbir yere gönderilmez.
+- voe kendiliğinden yalnızca üç bağlantı kurar: Kalkan filtre listelerinin güncellenmesi, yer imlerinin site simgeleri ve güncelleme denetimi. Güncelleme denetimi GitHub’a gider, yalnızca sürüm bilgisini içerir ve kapatılabilir. Yeni sürüm varsa paketi de GitHub’dan iner. voe AI’yi kurarsan model dosyaları bir kez Hugging Face’ten iner; yazdıkların hiçbir yere gönderilmez. Bir sayfayı çevirdiğinde o dilin çeviri modeli bir kez Mozilla’nın herkese açık model deposundan iner; sayfa metni gönderilmez.
 
 ## Geri bildirim
 
