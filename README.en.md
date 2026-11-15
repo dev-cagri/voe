@@ -92,11 +92,11 @@ Every record is encrypted on the device with **AES-256-GCM**. The server only se
   <img src=".github/assets/page-translate.png" alt="An English article translated into Turkish in voe; the card opened from the translate button in the address bar shows “Translated into Turkish” and “Show original”" width="100%">
 </p>
 
-- **One click.** On a page that isn’t in Turkish, press the translate button in the address bar or right-click → **Translate to Turkish**. What you see on screen is translated first; the whole page is Turkish within seconds.
+- **Like Chrome.** When a page in another language opens, the translate bubble appears on its own: press **Translate to Turkish**. There is also a translate button in the address bar and right-click → **Translate to Turkish**. What you see on screen is translated first; the whole page is Turkish within seconds. On pages whose interface is Turkish but some parts are not, only the foreign parts are translated.
 - **Fast.** Instead of a large AI model, it uses small neural models built for translation: hundreds of words per second.
 - **On this Mac.** Translation runs on the device and the page text is never sent anywhere. The first time, a 15–40 MB model per language downloads once. The models are the ones Mozilla publishes for Firefox translation (MPL-2.0). English is translated directly; German, French, Spanish, Russian, Arabic, Japanese and 20+ other languages go through English.
 - **The page keeps working.** Links, buttons and formatting stay in place; code blocks are not translated. Content that loads later is translated too. **Show original** brings everything back.
-- **Always translate.** Tick the box in the translate card and pages in that language are translated automatically. Managed in Settings › Page translation.
+- **See it in Turkish right away.** Tick “always translate … pages” in the bubble and pages in that language open already in Turkish. For a language you don’t want, choose “never translate”. Managed in Settings › Page translation.
 
 ## Files and notes
 
@@ -182,7 +182,7 @@ The iOS app is in **TestFlight** beta, and Android is on the way. It shares the 
 
 voe checks this repository’s [latest release](https://github.com/dev-cagri/voe/releases/latest) at launch and every 6 hours. The request carries only the app version.
 
-Starting with 0.2.11, updates install themselves. The new version’s `.zip` package downloads in the background. It is checked against the SHA-256 digest GitHub publishes, and then the macOS updater confirms it carries the same developer signature. It installs when you restart voe (or quit and reopen it), and your open tabs come back. If voe runs from the disk image or a folder it can’t write to, it offers the `.dmg` download as before.
+Starting with 0.2.11, updates install themselves. The new version’s `.zip` package downloads in the background. It is checked against the SHA-256 digest GitHub publishes, and then the macOS updater confirms it carries the same developer signature. It installs when you restart voe (or quit and reopen it), and your open tabs come back. If voe is opened from the disk image (`.dmg`) or Downloads it can’t update itself; since 0.5.1 it notices this and offers to **move itself to the Applications folder** in one click and relaunch. If the copy in Applications is newer, it opens that one instead.
 
 Coming from 0.2.10 or earlier, install the `.dmg` once by hand. Automatic download and the check can each be turned off in **Ayarlar → Güncellemeler** (Settings → Updates).
 

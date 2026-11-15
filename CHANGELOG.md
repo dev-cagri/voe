@@ -1,5 +1,12 @@
 # Sürüm notları
 
+## 0.5.1
+
+- **Çeviri Chrome’daki gibi:** Yabancı dildeki bir sayfa açılınca çeviri balonu kendiliğinden çıkar (odağı çalmaz, dokunulmazsa 12 saniyede kapanır, aynı sitede tekrar tekrar açılmaz). “… sayfaları her zaman çevir” işaretlenince o dildeki sayfalar doğrudan Türkçe açılır; “… asla çevrilmesin” ile o dil için balon bir daha çıkmaz.
+- **Düzeltme:** Arayüzü Türkçe, içeriği İngilizce olan sayfalarda (ör. bazı Steam sayfaları) dil yanlışlıkla Türkçe tespit edilip çeviri önerilmiyordu. Dil artık menüler yerine sayfanın asıl içeriğinden tespit edilir. Sağ tıkta ve ⋮ menüsünde “Türkçeye Çevir” her web sayfasında var; zaten Türkçe olan bölümler çevrilmeden bırakılır.
+- **Güncellemeler kendiliğinden:** voe disk görüntüsünden (`.dmg`) ya da İndirilenler’den açılmışsa kendini güncelleyemiyordu; her sürümde `.dmg` indirip “üzerine yaz” demek gerekiyordu. Artık bunu fark edip Uygulamalar klasörüne taşımayı önerir; tek tıkla taşınır ve yeniden açılır. Uygulamalar’daki kopya daha yeniyse taşımak yerine onu açar.
+- Ayarlar › Sayfa çevirisi: “hiç çevrilmeyen diller” listesi.
+
 ## 0.5.0
 
 - **Sayfa çevirisi:** Türkçe olmayan sayfaları tek tıkla Türkçeye çevir. Adres çubuğundaki çeviri düğmesi, sağ tık → “Türkçeye Çevir”, ⋮ menüsü ya da komut paleti. Önce ekranda gördüğün kısım çevrilir; sayfa birkaç saniyede tamamen Türkçe olur (sıcak motorda ekrandaki metin bir saniyeden kısa sürede).

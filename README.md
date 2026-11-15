@@ -92,11 +92,11 @@ Her kayıt cihazda **AES-256-GCM** ile şifrelenir. Sunucu yalnızca anlamsız �
   <img src=".github/assets/page-translate.png" alt="İngilizce bir makale voe’da Türkçeye çevrilmiş; adres çubuğundaki çeviri düğmesinden açılan kartta “Türkçeye çevrildi” ve “Orijinali göster”" width="100%">
 </p>
 
-- **Tek tık.** Türkçe olmayan bir sayfada adres çubuğundaki çeviri düğmesine bas ya da sağ tıkla → **Türkçeye Çevir**. Önce ekranda gördüğün kısım çevrilir; sayfa birkaç saniyede tamamen Türkçe olur.
+- **Chrome’daki gibi.** Yabancı dildeki bir sayfa açılınca çeviri balonu kendiliğinden çıkar: **Türkçeye çevir**’e bas. Adres çubuğundaki çeviri düğmesi ve sağ tık → **Türkçeye Çevir** de var. Önce ekranda gördüğün kısım çevrilir; sayfa birkaç saniyede tamamen Türkçe olur. Arayüzü Türkçe, bazı bölümleri yabancı dilde olan sayfalarda yalnızca yabancı kısımlar çevrilir.
 - **Hızlı.** Bu iş için büyük bir yapay zekâ modeli değil, çeviriye özel küçük sinirsel modeller kullanılır: saniyede yüzlerce kelime çevrilir.
 - **Bu Mac’te.** Çeviri cihazda yapılır, sayfa metni hiçbir yere gönderilmez. İlk kullanımda dil başına 15–40 MB model bir kez iner. Modeller Mozilla’nın Firefox çevirisi için yayımladığı modellerdir (MPL-2.0). İngilizceden doğrudan, Almanca, Fransızca, İspanyolca, Rusça, Arapça, Japonca ve 20’den fazla başka dilden İngilizce üzerinden çevrilir.
 - **Sayfa bozulmaz.** Bağlantılar, düğmeler ve biçimler yerinde kalır; kod blokları çevrilmez. Sonradan yüklenen içerik de çevrilir. **Orijinali göster** her şeyi geri getirir.
-- **Her zaman çevir.** Çeviri kartındaki kutuyu işaretlersen o dildeki sayfalar kendiliğinden çevrilir. Ayarlar › Sayfa çevirisi’nden yönetilir.
+- **Doğrudan Türkçe gör.** Balondaki “… sayfaları her zaman çevir” kutusunu işaretlersen o dildeki sayfalar açılır açılmaz Türkçe görünür. İstemediğin bir dil için “asla çevrilmesin” de. Ayarlar › Sayfa çevirisi’nden yönetilir.
 
 ## Dosyalar ve notlar
 
@@ -182,7 +182,7 @@ iOS sürümü **TestFlight** beta aşamasında, Android sürümü hazırlanıyor
 
 voe açılışta ve 6 saatte bir bu deponun [son sürümüne](https://github.com/dev-cagri/voe/releases/latest) bakar. İstek yalnızca uygulama sürümünü içerir.
 
-0.2.11’den itibaren güncellemeler kendiliğinden kurulur. Yeni sürümün `.zip` paketi arka planda iner. GitHub’ın verdiği SHA-256 özetiyle doğrulanır, ardından macOS güncelleyicisi aynı geliştirici imzasını taşıdığını denetler. voe’yu yeniden başlattığında (ya da kapatıp açtığında) kurulur ve açık sekmelerin geri gelir. voe disk görüntüsünden ya da yazılamayan bir klasörden çalışıyorsa eskisi gibi `.dmg` indirmeyi önerir.
+0.2.11’den itibaren güncellemeler kendiliğinden kurulur. Yeni sürümün `.zip` paketi arka planda iner. GitHub’ın verdiği SHA-256 özetiyle doğrulanır, ardından macOS güncelleyicisi aynı geliştirici imzasını taşıdığını denetler. voe’yu yeniden başlattığında (ya da kapatıp açtığında) kurulur ve açık sekmelerin geri gelir. voe disk görüntüsünden (`.dmg`) ya da İndirilenler’den açılırsa kendini güncelleyemez; 0.5.1’den itibaren bunu fark edip **Uygulamalar klasörüne taşımayı** önerir, tek tıkla taşınıp yeniden açılır. Uygulamalar’daki kopya daha yeniyse onu açar.
 
 0.2.10 ve öncesinden geçerken bir kereliğine `.dmg` ile kurman gerekir. Otomatik indirme ve denetim **Ayarlar → Güncellemeler** bölümünden ayrı ayrı kapatılabilir.
 
