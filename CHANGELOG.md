@@ -1,5 +1,10 @@
 # Sürüm notları
 
+## 0.6.2
+
+- **Düzeltme (Google girişi):** Google hesabına giriş “Oturumunuz açılamadı – Bu tarayıcı veya uygulama güvenli olmayabilir” hatasıyla reddediliyordu. Google, Chrome, Edge ve Brave gibi Chromium tabanlı tarayıcıların her sayfada sunduğu `chrome.app`, `chrome.csi` ve `chrome.loadTimes` nesnelerini arıyor; voe’da bunlar yoktu. Artık var. Sitelerdeki “Google ile giriş yap” açılır pencerelerinde de geçerli.
+- **WhatsApp paneli sığıyor:** WhatsApp’ın QR kodla giriş ekranı panelden genişti, sağ tarafı kesiliyordu. Panel artık taşan genişliği ölçüp WhatsApp’ı sığacak kadar küçültüyor; ekran değişince (girişten sohbetlere) yeniden ölçüyor. Geniş pencerelerde panel biraz daha geniş açılır (en fazla 520 px).
+
 ## 0.6.1
 
 - **Varsayılan tarayıcı:** Ayarlar’ın en üstünde “Varsayılan tarayıcı yap” alanı. Düğmeye basınca macOS’un onay penceresi açılır; “voe” seçilince kart kendiliğinden güncellenir. Pencere çıkmazsa aynı yerden Sistem Ayarları › Masaüstü ve Dock açılır. Komut paletinde de var.
