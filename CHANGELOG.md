@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## 0.5.2
+
+- **Sağ tık menüsünde ikonlar:** Sayfa, bağlantı, resim, metin kutusu ve seçili metin menülerindeki her öğenin (voe AI alt menüsü dahil) ikonu var; ⋮ menüsüyle aynı çizgide, açık ve koyu menüye uyar.
+- **Düzeltme:** Paragraf yerine kutularla (div) yazılmış, arayüzü Türkçe ama içeriği İngilizce sayfalarda (ör. Steam geliştirici panosu) çok sayıda Türkçe menü yazısı varsa dil yanlışlıkla Türkçe tespit edilebiliyordu. Dil artık sayfadaki cümle uzunluğundaki metinlerden okunuyor.
+- Çeviri balonu voe penceresi arka plandayken açılan sayfalarda da çıkar (odağı çalmaz).
+
 ## 0.5.1
 
 - **Çeviri Chrome’daki gibi:** Yabancı dildeki bir sayfa açılınca çeviri balonu kendiliğinden çıkar (odağı çalmaz, dokunulmazsa 12 saniyede kapanır, aynı sitede tekrar tekrar açılmaz). “… sayfaları her zaman çevir” işaretlenince o dildeki sayfalar doğrudan Türkçe açılır; “… asla çevrilmesin” ile o dil için balon bir daha çıkmaz.
