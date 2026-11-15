@@ -1,5 +1,14 @@
 # Sürüm notları
 
+## 0.6.0
+
+- **WhatsApp yan paneli:** Araç çubuğundaki WhatsApp düğmesi (voe AI düğmesinin yanında) WhatsApp Web’i sayfanın yanında, sağ panelde açar. Gezinirken mesajlaşmak için sekme değiştirmen gerekmez.
+  - Panel kapalıyken de WhatsApp arka planda açık kalır: bildirimler gelir, okunmamış mesaj sayısı düğmede ve Dock’ta rozet olarak görünür.
+  - Başka bir pencerede açınca aynı oturum oraya taşınır (yeniden giriş gerekmez). Sohbetteki bağlantılar yeni sekmede açılır. voe AI paneliyle aynı yeri kullanır; biri açılınca öteki kapanır.
+  - ⋮ menüsü ve komut paletinden de açılır; Ayarlar › Araç çubuğu’ndan düğme gizlenebilir. Gizli pencerelerde kullanılmaz.
+- **Uyumluluk:** voe artık kendini Chrome ile birebir aynı tanıtıyor; tarayıcı kimliğindeki “VoeBrowser” eki kaldırıldı. WhatsApp Web tanımadığı bu eki görünce “Chrome’u güncelleyin” diyerek voe’yu reddediyordu; bazı giriş sayfaları da şüpheli sayabiliyordu.
+- Siteler kalıcı depolama izni alabiliyor: disk dolsa bile oturum verileri (ör. WhatsApp girişi) kendiliğinden silinmez.
+
 ## 0.5.3
 
 - **Düzeltme (Facebook girişi):** voe Kalkanı açıkken Facebook’a giriş yapılamıyordu. İki neden vardı: Kalkan Facebook’un kendi isteklerini engelliyordu, filtre betikleri de birbiriyle çakışıp (“JSONPath zaten tanımlı”) yarım çalışıyordu. Artık giriş yapılan büyük sitelerde (Facebook, Instagram, WhatsApp, Google hesapları, Apple, Microsoft, X, LinkedIn, GitHub, e-Devlet, Steam) sitenin kendi istekleri engellenmez; üçüncü taraf reklam ve izleyiciler engellenmeye devam eder. Filtre betikleri her sitede kendi kapsamında çalışır (YouTube’daki aynı hata da giderildi).

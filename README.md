@@ -149,6 +149,7 @@ voe AI **isteğe bağlıdır**. Kurmadığın sürece hiçbir şey indirilmez. K
 | **Vakit** | Sıradaki ezan vakti, hicri tarih ve zikirmatik (cihazda hesaplanır). Düğme dinamiktir: vakte bir saat kalınca geri sayım başlar. Ayarlar’dan kapatılabilir |
 | **Web bildirimleri** | Siteler izin ister, kararın hatırlanır; bildirime tıklayınca sekmesi öne gelir |
 | **İndirilenler** | Bitmiş dosyayı listeden Finder’a, masaüstüne ya da bir siteye sürükle |
+| **WhatsApp** | Araç çubuğundaki WhatsApp düğmesi WhatsApp Web’i sayfanın yanında, sağ panelde açar. Panel kapalıyken de arka planda çalışır: bildirimler gelir, okunmamış mesaj sayısı düğmede ve Dock’ta görünür. Sohbetteki bağlantılar yeni sekmede açılır |
 | **Sayfa çevirisi** | Türkçe olmayan sayfaları tek tıkla Türkçeye çevir; cihazda, hızlı. Sağ tık, ⋮ menüsü ya da adres çubuğundaki düğme; “her zaman çevir” seçeneği |
 | **Notlar ve vurgular** | Metni seç → sağ tık → Vurgula (`⇧⌘H`); vurguya tıklayıp not ekle. Tümü `voe://notes`’ta ve yeni sekmedeki “Notlarım” kartında; Markdown olarak dışa aktarılır |
 | **Site verilerini temizle** | Bir site düzgün çalışmıyorsa adres çubuğundaki kilitten ya da ⋮ menüsünden yalnızca o sitenin (alt alan adları dahil) çerezlerini, depolamasını ve önbelleğini sil. Ayarlar’da sitelere göre çerez listesi |
