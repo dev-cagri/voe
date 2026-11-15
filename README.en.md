@@ -175,7 +175,7 @@ The iOS app is in **TestFlight** beta, and Android is on the way. It shares the 
 
 1. Download **[voe-mac-arm64.dmg](https://github.com/dev-cagri/voe/releases/latest/download/voe-mac-arm64.dmg)**, open it and drag **voe** into **Applications**.
 2. voe is signed with an Apple Developer ID and **notarized by Apple**; on first launch macOS only asks whether to open an app downloaded from the internet.
-3. You can make voe your default browser in **Ayarlar → Varsayılan tarayıcı** (Settings → Default browser). Bookmarks, passwords, saved cards, addresses and history from Chrome, Edge, Brave and other browsers import in one step from **⋮ → Tarayıcıdan İçe Aktar…** (Import from browser); everything stays on your device.
+3. You can make voe your default browser with the **Varsayılan tarayıcı yap** (Make default browser) button at the top of Settings, or in System Settings › Desktop & Dock › Default web browser. Links from other apps and `.html` files then open in voe. Bookmarks, passwords, saved cards, addresses and history from Chrome, Edge, Brave and other browsers import in one step from **⋮ → Tarayıcıdan İçe Aktar…** (Import from browser); everything stays on your device.
 
 **Requirements:** macOS 12 Monterey or later on Apple Silicon (M1 or newer).
 

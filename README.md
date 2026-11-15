@@ -175,7 +175,7 @@ iOS sürümü **TestFlight** beta aşamasında, Android sürümü hazırlanıyor
 
 1. **[voe-mac-arm64.dmg](https://github.com/dev-cagri/voe/releases/latest/download/voe-mac-arm64.dmg)** dosyasını indir, aç ve **voe**’yu **Uygulamalar** klasörüne sürükle.
 2. voe, Apple’ın Developer ID imzasıyla imzalanmış ve Apple tarafından **notarize edilmiştir**; ilk açılışta yalnızca “internetten indirildi, açılsın mı?” sorusu çıkar.
-3. İstersen **Ayarlar → Varsayılan tarayıcı** bölümünden voe’yu varsayılan tarayıcın yap. Chrome, Edge, Brave gibi tarayıcılardaki yer imlerini, şifreleri, kartları, adresleri ve geçmişi **⋮ → Tarayıcıdan İçe Aktar…** ile tek adımda taşıyabilirsin.
+3. İstersen Ayarlar’ın en üstündeki **Varsayılan tarayıcı yap** düğmesiyle (ya da Sistem Ayarları › Masaüstü ve Dock › Varsayılan web tarayıcısı) voe’yu varsayılan tarayıcın yap; diğer uygulamalardaki bağlantılar ve `.html` dosyaları voe’da açılır. Chrome, Edge, Brave gibi tarayıcılardaki yer imlerini, şifreleri, kartları, adresleri ve geçmişi **⋮ → Tarayıcıdan İçe Aktar…** ile tek adımda taşıyabilirsin.
 
 **Gereksinimler:** macOS 12 Monterey ya da üzeri, Apple Silicon (M1 ve sonrası).
 

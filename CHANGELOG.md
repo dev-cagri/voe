@@ -1,5 +1,12 @@
 # Sürüm notları
 
+## 0.6.1
+
+- **Varsayılan tarayıcı:** Ayarlar’ın en üstünde “Varsayılan tarayıcı yap” alanı. Düğmeye basınca macOS’un onay penceresi açılır; “voe” seçilince kart kendiliğinden güncellenir. Pencere çıkmazsa aynı yerden Sistem Ayarları › Masaüstü ve Dock açılır. Komut paletinde de var.
+- voe varsayılan tarayıcıyken diğer uygulamalardaki bağlantılar ve Finder’da çift tıklanan `.html` dosyaları voe’da açılır.
+- Dışarıdan gelen bağlantılar son kullanılan normal pencerede (gizli pencerede değil) açılır. Pencere öne gelir, küçültülmüşse geri açılır; boş bir yeni sekme varsa o kullanılır.
+- **Düzeltme:** voe kapalıyken bir bağlantıya tıklanınca yalnızca o bağlantı açılıyor, önceki oturumun sekmeleri geri gelmiyordu. Artık önce sekmeler geri yüklenir, bağlantı yanlarında açılır.
+
 ## 0.6.0
 
 - **WhatsApp yan paneli:** Araç çubuğundaki WhatsApp düğmesi (voe AI düğmesinin yanında) WhatsApp Web’i sayfanın yanında, sağ panelde açar. Gezinirken mesajlaşmak için sekme değiştirmen gerekmez.
