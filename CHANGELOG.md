@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## 0.7.1
+
+- **Tablolarda sütun genişliği:** Excel/CSV dosyalarında sütun başlığının kenarından sürükleyerek sütunu genişletip daraltabilirsin; kenara çift tıklayınca sütun içeriğe sığar. Başlıklardan birden çok sütun seçiliyse hepsi birlikte değişir. ⌘Z ile geri alınır.
+  - .xlsx/.xlsm dosyalarında yeni genişlikler kaydedince dosyaya yazılır (diğer sütunlar, biçimler ve formüller olduğu gibi kalır). CSV biçimi genişlik saklayamadığı için orada yalnızca ekranda değişir.
+- **Düzeltme:** Excel dosyasındaki sütun genişlikleri ve gizli sütunlar okunmuyordu; genişlikler içeriğe göre tahmin ediliyordu. Artık dosyadaki genişlikler Excel’deki gibi gösterilir.
+
 ## 0.7.0
 
 - **Medya kontrolü:** Bir sekmede müzik ya da video çalınca araç çubuğunda medya düğmesi belirir. Kartta tüm sekmelerdeki medya kapak, başlık, sanatçı ve ilerleme çubuğuyla listelenir.
